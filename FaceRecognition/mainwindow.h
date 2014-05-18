@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "administration.h"
 #include "employe.h"
+#include "logindialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +27,7 @@ private:
     Ui::MainWindow *ui;
     Administration * admin;
     Employe * employe;
+    LoginDialog * login;
 };
 
 #endif // MAINWINDOW_H

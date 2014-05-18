@@ -1,11 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "logindialog.h"
 
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 }
@@ -17,8 +16,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButtonAdmin_clicked()
 {
-    admin = new Administration(this);
-    admin->show();
+    login = new LoginDialog (this);
+    login->show();
+    //admin = new Administration(this);
+    //admin->show();
 }
 
 void MainWindow::on_pushButtonEmploye_clicked()

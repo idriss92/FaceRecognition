@@ -167,6 +167,7 @@ Makefile: ../FaceRecognition/FaceRecognition.pro ../../../../../../Qt/Qt5.2.1Win
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/mkspecs/features/lex.prf \
 		../FaceRecognition/FaceRecognition.pro \
 		C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Widgets.prl \
+		C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Sql.prl \
 		C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Gui.prl \
 		C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-g++ CONFIG+=debug CONFIG+=declarative_debug CONFIG+=qml_debug -o Makefile ..\FaceRecognition\FaceRecognition.pro
@@ -278,6 +279,7 @@ Makefile: ../FaceRecognition/FaceRecognition.pro ../../../../../../Qt/Qt5.2.1Win
 ..\..\..\..\..\..\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\mkspecs\features\lex.prf:
 ..\FaceRecognition\FaceRecognition.pro:
 C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Widgets.prl:
+C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Sql.prl:
 C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Gui.prl:
 C:/Qt/Qt5.2.1Windows/5.2.1/mingw48_32/lib/Qt5Core.prl:
 qmake: FORCE
