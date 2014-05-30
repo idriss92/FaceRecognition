@@ -22,6 +22,8 @@ public:
 private slots:
     void on_pushButtonEnregistrer_clicked();
 
+    void on_pushButtonAnnuler_clicked();
+
 private:
     Ui::AjouterEmploye *ui;
 };

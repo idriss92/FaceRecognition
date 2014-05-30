@@ -22,19 +22,6 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
     nom = ui->lineEditNom->text();
     prenom = ui ->lineEditPrenom->text();
 
-
-    //password = ui->lineEditPassword->text();
-    /*if(mydb.open())
-    {
-        admin = new Administration(this);
-        admin->show();
-    }
-
-    if(!connOpen()){
-        qDebug()<<"Failed to open the database";
-        return ;
-    }
-*/
     //ouvrons la connexion
     conn.connOpen();
     QSqlQuery query;
@@ -44,9 +31,15 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
     {
         QMessageBox::critical(this,tr("Save"),tr("Saved"));
         conn.close();
+        this->hide();
     }
     else
     {
         QMessageBox::critical(this,tr("Error"),query.lastError().text());
     }
+}
+
+void AjouterEmploye::on_pushButtonAnnuler_clicked()
+{
+    this->hide();
 }
