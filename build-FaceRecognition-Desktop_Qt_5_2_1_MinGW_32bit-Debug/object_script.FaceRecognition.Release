@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\administration.o
+./release\employe.o
+./release\logindialog.o
+./release\listeemploye.o
+./release\ajouteremploye.o
+./release\ajouterdepartement.o
+./release\moc_mainwindow.o
+./release\moc_administration.o
+./release\moc_employe.o
+./release\moc_logindialog.o
+./release\moc_listeemploye.o
+./release\moc_ajouteremploye.o
+./release\moc_ajouterdepartement.o
+);

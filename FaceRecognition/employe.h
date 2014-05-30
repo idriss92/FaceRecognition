@@ -15,6 +15,9 @@ public:
     explicit Employe(QWidget *parent = 0);
     ~Employe();
 
+private slots:
+    void on_pushButtonProcess_clicked();
+
 private:
     Ui::Employe *ui;
 };

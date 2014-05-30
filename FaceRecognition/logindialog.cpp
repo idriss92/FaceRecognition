@@ -47,21 +47,25 @@ void LoginDialog::on_pushButtonConnexion_clicked()
         while(query.next())
         {
             count++;
-
+        }
 
         if(count == 1)
         {
-            ui->labelStatut->setText("Username and password is corrent");
+            ui->labelStatut->setText("Username and password is correct");
             connClose();
             this->hide();
             admin = new Administration(this);
             admin->show();
         }
 
-        if(count > 1)
+        else if(count > 1)
         {
-            return ;//ui->labelStatut("Duplicate username and password");
-        }}
+            ui->labelStatut->setText("Duplicate username and password");
+        }
+        else if (count <1)
+        {
+            ui->labelStatut->setText("Incorrect username or password");
+        }
     }
 }
 

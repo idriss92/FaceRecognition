@@ -10,3 +10,8 @@ Employe::~Employe()
 {
     delete ui;
 }
+
+void Employe::on_pushButtonProcess_clicked()
+{
+
+}

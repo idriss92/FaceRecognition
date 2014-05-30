@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\administration.o
+./debug\employe.o
+./debug\logindialog.o
+./debug\listeemploye.o
+./debug\ajouteremploye.o
+./debug\ajouterdepartement.o
+./debug\moc_mainwindow.o
+./debug\moc_administration.o
+./debug\moc_employe.o
+./debug\moc_logindialog.o
+./debug\moc_listeemploye.o
+./debug\moc_ajouteremploye.o
+./debug\moc_ajouterdepartement.o
+);
