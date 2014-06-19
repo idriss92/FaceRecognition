@@ -41,3 +41,8 @@ void Administration::on_pushButtonListeEmp_clicked()
 {
 
 }
+
+void Administration::on_pushButton_clicked()
+{
+
+}

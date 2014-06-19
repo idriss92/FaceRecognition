@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>772</width>
     <height>600</height>
    </rect>
   </property>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="pushButtonProcess">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>210</y>
+      <x>210</x>
+      <y>150</y>
       <width>281</width>
       <height>101</height>
      </rect>
@@ -40,14 +40,43 @@
      <string>Process</string>
     </property>
    </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>290</y>
+      <width>441</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>150</y>
+      <width>141</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>21</height>
+     <width>772</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

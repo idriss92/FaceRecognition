@@ -19,7 +19,10 @@ SOURCES += main.cpp\
     logindialog.cpp \
     listeemploye.cpp \
     ajouteremploye.cpp \
-    ajouterdepartement.cpp
+    ajouterdepartement.cpp \
+    recognizer.cpp \
+    rec.cpp \
+    capture.cpp
 
 HEADERS  += mainwindow.h \
     administration.h \
@@ -27,7 +30,10 @@ HEADERS  += mainwindow.h \
     logindialog.h \
     listeemploye.h \
     ajouteremploye.h \
-    ajouterdepartement.h
+    ajouterdepartement.h \
+    recognizer.h \
+    rec.h \
+    capture.h
 
 FORMS    += mainwindow.ui \
     administration.ui \
@@ -36,3 +42,18 @@ FORMS    += mainwindow.ui \
     listeemploye.ui \
     ajouteremploye.ui \
     ajouterdepartement.ui
+
+
+INCLUDEPATH += /usr/local/include/opencv
+LIBS += -L/usr/local/lib \
+-lopencv_core \
+-lopencv_imgproc \
+-lopencv_highgui \
+-lopencv_ml \
+-lopencv_video \
+-lopencv_features2d \
+-lopencv_calib3d \
+-lopencv_objdetect \
+-lopencv_contrib \
+-lopencv_legacy \
+-lopencv_flann

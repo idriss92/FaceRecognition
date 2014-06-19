@@ -29,6 +29,8 @@ private slots:
 
     void on_pushButtonListeEmp_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Administration *ui;
     ListeEmploye * list;
