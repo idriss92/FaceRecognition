@@ -3,7 +3,7 @@
 using namespace std;
 #include <iostream>
 #include "logindialog.h"
-
+#include "identifier.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -19,18 +19,13 @@ void MainWindow::on_pushButtonAdmin_clicked()
 {
     login = new LoginDialog (this);
     login->show();
-    //admin = new Administration(this);
-    //admin->show();
+    admin = new Administration(this);
+    admin->show();
 }
 
 void MainWindow::on_pushButtonEmploye_clicked()
 {
-    employe = new Employe(this);
-    employe->show();
-
+  f_employe = new Employe(this);
+  f_employe->show();
 }
 
-void MainWindow::on_pushButton_clicked()
-{
-    cout<<"ok";
-}

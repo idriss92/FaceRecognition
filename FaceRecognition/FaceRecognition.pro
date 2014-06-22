@@ -12,7 +12,7 @@ TARGET = FaceRecognition
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
+SOURCES +=\
         mainwindow.cpp \
     administration.cpp \
     employe.cpp \
@@ -22,7 +22,11 @@ SOURCES += main.cpp\
     ajouterdepartement.cpp \
     recognizer.cpp \
     rec.cpp \
-    capture.cpp
+    capture.cpp \
+    main.cpp \
+    personne.cpp \
+    service.cpp \
+    identifier.cpp
 
 HEADERS  += mainwindow.h \
     administration.h \
@@ -33,15 +37,20 @@ HEADERS  += mainwindow.h \
     ajouterdepartement.h \
     recognizer.h \
     rec.h \
-    capture.h
+    capture.h \
+    personne.h \
+    service.h \
+    identifier.h
 
 FORMS    += mainwindow.ui \
     administration.ui \
-    employe.ui \
     logindialog.ui \
     listeemploye.ui \
     ajouteremploye.ui \
-    ajouterdepartement.ui
+    ajouterdepartement.ui \
+    recognize.ui \
+    identifier.ui \
+    employe.ui
 
 
 INCLUDEPATH += /usr/local/include/opencv

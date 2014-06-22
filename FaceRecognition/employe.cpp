@@ -25,38 +25,21 @@ Employe::~Employe()
 
 void Employe::on_pushButtonProcess_clicked()
 {
-
     const char* nom = "alphonse";
     Capture * capture = new Capture(nom);
     capture->init();
-
-
 }
 
+
+void Employe::on_add_clicked()
+{
+    f_ajouterEmploye = new AjouterEmploye(this);
+    f_ajouterEmploye->show();
+}
 
 void Employe::on_pushButton_clicked()
 {
-   cout<<"on_pushButton_clicked"<<endl;
-
-   const char* nom = "alfred";
-   Capture * capture = new Capture(nom);
-   capture->init();
-
-
-   /*  const char* nom = "alfred";
+    const char* nom = "alphonse";
     Capture * capture = new Capture(nom);
     capture->init();
-      Mat img; Mat templ; Mat result;
-      img = imread("/home/joaany/Pictures/alphonse.jpg", 1 );
-      templ = imread("/home/joaany/Pictures/alfred.jpg", 1 );
-      rec *r = new rec(img,templ,result);
-
-      r->Match();*/
-
-}
-
-
-void Employe::on_compare_clicked()
-{
-    cout<<"ok";
 }

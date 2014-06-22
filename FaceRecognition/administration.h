@@ -18,10 +18,6 @@ public:
     explicit Administration(QWidget *parent = 0);
     ~Administration();
 
-
-
-
-
 private slots:
     void on_pushButtonNouvelDepart_clicked();
 
@@ -29,7 +25,7 @@ private slots:
 
     void on_pushButtonListeEmp_clicked();
 
-    void on_pushButton_clicked();
+
 
 private:
     Ui::Administration *ui;

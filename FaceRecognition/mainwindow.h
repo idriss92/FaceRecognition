@@ -5,6 +5,7 @@
 #include "administration.h"
 #include "employe.h"
 #include "logindialog.h"
+#include "employe.h"
 
 namespace Ui {
 class MainWindow;
@@ -23,13 +24,16 @@ private slots:
 
     void on_pushButtonEmploye_clicked();
 
-    void on_pushButton_clicked();
+
+
 
 private:
     Ui::MainWindow *ui;
     Administration * admin;
-    Employe * employe;
+
     LoginDialog * login;
+    Employe * f_employe;
+
 };
 
 #endif // MAINWINDOW_H

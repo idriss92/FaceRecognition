@@ -4,46 +4,34 @@
 #include <stdio.h>
 #include <string.h>
 #include "capture.h"
+#include "rec.h"
+#include "personne.h"
 using namespace std;
 
 int main(int argc, char *argv[])
 {
+    QApplication a(argc, argv);
+    MainWindow w;
 
-  /*  Mat img; Mat templ; Mat result;
-    img = imread( "/home/joaany/Pictures/alfred.jpg", 1 );
-    templ = imread( "/home/joaany/Pictures/alphonse.jpg", 1 );
 
-    rec *r = new rec(img,templ,result);
+    rec * mrec = new rec();
+    mrec->getPersonnes();
+    mrec->prepareCheck();
+    string file = "/home/joaany/Pictures/3.jpg" ;
+    int fnum = mrec->Match(file);
+    cout<<fnum<<endl;
+    w.show();
 
-    try {
-        r->Match();
-    } catch (...) {
-        cout<<"failed"<<endl;
-    }
-*/
-  QApplication a(argc, argv);
-       MainWindow w;
-       w.show();
 
-       return a.exec();
+    return a.exec();
 
-   /*  Mat img; Mat templ; Mat result;
-    img = imread("/home/joaany/Pictures/alphonse.jpg", 1 );
-    templ = imread("/home/joaany/Pictures/alfred.jpg", 1 );
 
-    rec *r = new rec(img,templ,result);
 
-    try {
-        r->Match();
-         cout<<"ok"<<endl;
-    } catch (...) {
-        cout<<"failed"<<endl;
-    }
 
-     return 0;*/
 
-   /* Capture * cap = new Capture("jo");
-    cap->init();
-*/
+
+
+
+
 }
 

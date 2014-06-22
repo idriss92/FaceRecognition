@@ -24,6 +24,8 @@ private slots:
 
     void on_pushButtonAnnuler_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::AjouterEmploye *ui;
 };

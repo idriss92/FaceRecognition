@@ -3,6 +3,7 @@
 #include "capture.h"
 #include "rec.h"
 #include <QMainWindow>
+#include "ajouteremploye.h"
 
 namespace Ui {
 class Employe;
@@ -19,15 +20,17 @@ public:
 private slots:
     void on_pushButtonProcess_clicked();
 
+
+
+
+
+    void on_add_clicked();
+
     void on_pushButton_clicked();
-
-    void on_compare_clicked();
-
-    void on_pushButton_2_clicked();
 
 private:
     Ui::Employe *ui;
-
+    AjouterEmploye * f_ajouterEmploye;
 };
 
 #endif // EMPLOYE_H

@@ -1,6 +1,8 @@
 #include "ajouteremploye.h"
 #include "ui_ajouteremploye.h"
 #include <QMessageBox>
+#include "capture.h"
+
 #include <logindialog.h>
 AjouterEmploye::AjouterEmploye(QWidget *parent) :
     QWidget(parent),
@@ -18,7 +20,7 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
 {
     LoginDialog conn;
     QString nom,prenom, identifiant;
-    identifiant = ui->lineEditIdentif->text();
+
     nom = ui->lineEditNom->text();
     prenom = ui ->lineEditPrenom->text();
 
@@ -42,4 +44,10 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
 void AjouterEmploye::on_pushButtonAnnuler_clicked()
 {
     this->hide();
+}
+
+void AjouterEmploye::on_pushButton_clicked()
+{
+    Capture * capture = new Capture();
+    capture->init();
 }

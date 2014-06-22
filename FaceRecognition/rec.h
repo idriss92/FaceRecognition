@@ -6,17 +6,23 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
 #include <stdio.h>
+#include <vector>
+#include <opencv2/contrib/contrib.hpp>
 using namespace cv;
 class rec
 {
 private:
-    Mat img;
-    Mat templ;
-    Mat result;
+
+    vector<int> labels;
+    vector<Mat> listImg;
+    String path;
+    Ptr<FaceRecognizer> model;
 public:
-    rec();
-    rec(Mat img, Mat tmpl, Mat result);
-    void Match();
+    rec();   
+    int Match(String picture);
+    void getPersonnes();
+    void prepareCheck();
+
 };
 
 #endif // REC_H

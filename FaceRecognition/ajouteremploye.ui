@@ -6,56 +6,30 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>662</width>
-    <height>480</height>
+    <width>582</width>
+    <height>414</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>50</y>
-     <width>291</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Ajout d'un nouvel employé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
   <widget class="QGroupBox" name="groupBoxEmploye">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>100</y>
-     <width>401</width>
-     <height>261</height>
+     <x>40</x>
+     <y>10</y>
+     <width>491</width>
+     <height>331</height>
     </rect>
    </property>
    <property name="title">
-    <string>Employé</string>
+    <string>Nouvel employé</string>
    </property>
-   <widget class="QLabel" name="label_identifiant">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>30</y>
-      <width>61</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Identifiant</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_nom">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>60</y>
+      <x>50</x>
+      <y>110</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -67,58 +41,35 @@
    <widget class="QLabel" name="label_prenom">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>100</y>
-      <width>46</width>
-      <height>13</height>
+      <x>50</x>
+      <y>150</y>
+      <width>81</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>Prénom</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_image">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>140</y>
-      <width>46</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Image</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_departement">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>180</y>
-      <width>71</width>
-      <height>16</height>
+      <x>50</x>
+      <y>190</y>
+      <width>101</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Département</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEditIdentif">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>30</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
+     <string>Service</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditNom">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>60</y>
-      <width>231</width>
+      <x>160</x>
+      <y>110</y>
+      <width>151</width>
       <height>20</height>
      </rect>
     </property>
@@ -126,8 +77,8 @@
    <widget class="QLineEdit" name="lineEditPrenom">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>100</y>
+      <x>160</x>
+      <y>150</y>
       <width>231</width>
       <height>20</height>
      </rect>
@@ -136,8 +87,8 @@
    <widget class="QComboBox" name="comboBoxDepartement">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>180</y>
+      <x>160</x>
+      <y>190</y>
       <width>231</width>
       <height>22</height>
      </rect>
@@ -146,8 +97,8 @@
    <widget class="QPushButton" name="pushButtonAnnuler">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>230</y>
+      <x>90</x>
+      <y>290</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -159,14 +110,37 @@
    <widget class="QPushButton" name="pushButtonEnregistrer">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>230</y>
-      <width>75</width>
+      <x>200</x>
+      <y>300</y>
+      <width>101</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>Enregistrer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>70</y>
+      <width>121</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/icone-personnage.jpg</normaloff>../icons/icone-personnage.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
     </property>
    </widget>
   </widget>
