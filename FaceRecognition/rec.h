@@ -7,6 +7,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <vector>
+#include "string"
 #include <opencv2/contrib/contrib.hpp>
 using namespace cv;
 class rec
@@ -18,11 +19,11 @@ private:
     String path;
     Ptr<FaceRecognizer> model;
 public:
-    rec();   
+    rec();
     int Match(String picture);
     void getPersonnes();
     void prepareCheck();
-
+    Mat getListImg(int indice);
 };
 
 #endif // REC_H

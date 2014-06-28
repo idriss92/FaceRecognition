@@ -27,7 +27,7 @@ public:
     bool connOpen()
     {
         mydb = QSqlDatabase::addDatabase("QSQLITE");
-        mydb.setDatabaseName("C:/sqlite3/facerecognition.db");
+        mydb.setDatabaseName("/home/joaany/Documents/C++/bdd/facerecognition.db");
 
         if(!mydb.open()){
             qDebug()<<("Failed to open de database");
@@ -46,8 +46,6 @@ public:
 
 private slots:
     void on_pushButtonConnexion_clicked();
-
-
     void on_pushButton_clicked();
 
 private:

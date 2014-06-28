@@ -6,41 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>599</width>
-    <height>468</height>
+    <width>537</width>
+    <height>229</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Employe</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="formLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>311</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <layout class="QFormLayout" name="formLayout">
-     <property name="fieldGrowthPolicy">
-      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-     </property>
-     <item row="0" column="0">
-      <widget class="QPushButton" name="add">
-       <property name="text">
-        <string>Nouvel utilisateur</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>90</y>
+      <x>20</x>
+      <y>20</y>
       <width>501</width>
       <height>161</height>
      </rect>
@@ -50,6 +28,12 @@
       <widget class="QPushButton" name="Authentifier">
        <property name="text">
         <string>Authentifier</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>58</height>
+        </size>
        </property>
       </widget>
      </item>
@@ -61,7 +45,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>599</width>
+     <width>537</width>
      <height>25</height>
     </rect>
    </property>

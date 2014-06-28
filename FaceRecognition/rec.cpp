@@ -58,3 +58,8 @@ void rec::prepareCheck(){
         cout<<"Erreur Train fichier incompatible"<<endl;
     }
 }
+
+
+ vector<Mat> rec::getListImg(){
+     return this->listImg;
+ }

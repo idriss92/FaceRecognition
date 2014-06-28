@@ -19,12 +19,14 @@ Capture::Capture()
     this->filename = "/home/joaany/Documents/ProjetC++/testOpenCv/haarcascade_frontalface_alt.xml";
     this->cascade = ( CvHaarClassifierCascade* )cvLoad( this->filename, 0, 0, 0 );
     this->nom = "unknwon";
+    this->path="/home/joaany/Pictures/";
 }
  Capture::Capture(string nom)
 {
     this->filename = "/home/joaany/Documents/ProjetC++/testOpenCv/haarcascade_frontalface_alt.xml";
     this->nom = nom;
     this->cascade = ( CvHaarClassifierCascade* )cvLoad( this->filename, 0, 0, 0 );
+    this->path="/home/joaany/Pictures/";
 }
 void Capture::init(){
 
@@ -109,12 +111,16 @@ void Capture::saveImage(IplImage * frame){
 
 
 
-     std::string path="/home/joaany/Pictures/";
+
      std::string name=this->nom;
      std::string ext= ".jpg";
-     std::string allPath= path+name+ext;
+     std::string allPath= this->path+name+ext;
 
     cout<<allPath<<endl;
       cvSaveImage( allPath.c_str(), dstGray);
 
+}
+
+void Capture::setPath(string path){
+    this->path = path;
 }

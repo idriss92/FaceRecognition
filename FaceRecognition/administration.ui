@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>834</width>
+    <height>352</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>70</y>
+      <y>20</y>
       <width>281</width>
       <height>41</height>
      </rect>
@@ -27,57 +27,53 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Presentation Menu&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButtonNouvelEmp">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ajouter un employé</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="pushButtonListeEmp">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>160</y>
+      <x>30</x>
+      <y>150</y>
       <width>141</width>
-      <height>71</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>Liste Employés</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButtonNouvelEmp">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>160</y>
-      <width>161</width>
-      <height>71</height>
+      <x>260</x>
+      <y>70</y>
+      <width>541</width>
+      <height>201</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Nouvel Employé</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButtonNouvelDepart">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>160</y>
-      <width>171</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Nouveau Département</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>320</y>
-      <width>99</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pushButtonNouvelDepart">
+       <property name="text">
+        <string>Ajouter un service</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -85,7 +81,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>834</width>
      <height>25</height>
     </rect>
    </property>

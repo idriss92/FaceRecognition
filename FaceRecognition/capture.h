@@ -16,10 +16,12 @@ class Capture
 private:
     CvHaarClassifierCascade *cascade;
     CvMemStorage			*storage;
-    int key;  char *filename;
+    int key;
+    char *filename;
     string  nom;
     CvCapture *capture;
     IplImage  *img;
+    string path;
 
 public:
     Capture();
@@ -27,6 +29,7 @@ public:
     void detectFaces( IplImage *img );
     void init();
     void saveImage(IplImage * image);
+    void setPath(string path);
 };
 
 #endif // CAPTURE_H

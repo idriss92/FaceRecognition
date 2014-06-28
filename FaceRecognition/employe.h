@@ -18,15 +18,9 @@ public:
     ~Employe();
 
 private slots:
-    void on_pushButtonProcess_clicked();
 
 
 
-
-
-    void on_add_clicked();
-
-    void on_pushButton_clicked();
 
     void on_Authentifier_clicked();
 

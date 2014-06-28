@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <QtGui>
+#include <QMessageBox>
 
 #include "mainwindow.h"
 #include <QApplication>
@@ -23,28 +24,25 @@ Employe::~Employe()
     delete ui;
 }
 
-void Employe::on_pushButtonProcess_clicked()
-{
-    const char* nom = "alphonse";
-    Capture * capture = new Capture(nom);
-    capture->init();
-}
 
-
-void Employe::on_add_clicked()
-{
-    f_ajouterEmploye = new AjouterEmploye(this);
-    f_ajouterEmploye->show();
-}
-
-void Employe::on_pushButton_clicked()
-{
-    const char* nom = "alphonse";
-    Capture * capture = new Capture(nom);
-    capture->init();
-}
 
 void Employe::on_Authentifier_clicked()
 {
-    cout<<"match"<<endl;
+    QMessageBox::information(this,tr("Informations"),"Demarer la capture. Placer vous face à la caméra");
+
+    Capture * capture = new Capture("tmp");
+    capture->setPath("/home/joaany/search/");
+    capture->init();
+
+    QMessageBox::information(this,tr("Informations"),"Reconnaissance");
+
+    rec * mrec = new rec();
+    mrec->getPersonnes();
+    mrec->prepareCheck();
+    string file = "/home/joaany/search/tmp.jpg" ;
+    int fnum = mrec->Match(file);
+
+    Mat img = mrec->getListImg(fnum);
+    cout<<fnum<<endl;
+
 }

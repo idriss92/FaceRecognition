@@ -29,17 +29,14 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
     prenom = ui ->lineEditPrenom->text();
 
     if (( prenom.size() > 0) && ( nom.size() > 0)){
-
-        Capture * capture = new Capture(nom.toStdString());
-        capture->init();
-
-
         conn.connOpen();
         QSqlQuery query;
-        query.prepare("insert into Employe (Id, Nom, Prenom) values ('"+identifiant+"','"+nom+"','"+prenom+"')");
+        query.prepare("insert into employe (id_employe,id_service, nom, prenom) values ('"+identifiant+"','"+"0"+"','"+nom+"','"+prenom+"')");
 
         if(query.exec())
         {
+            Capture * capture = new Capture(nom.toStdString());
+            capture->init();
             QMessageBox::critical(this,tr("Save"),tr("Saved"));
             conn.close();
             this->hide();
@@ -55,7 +52,7 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
 
 void AjouterEmploye::on_pushButtonAnnuler_clicked()
 {
-
+    this->hide();
 }
 
 void AjouterEmploye::on_pushButton_clicked()
