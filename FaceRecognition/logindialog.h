@@ -48,6 +48,8 @@ private slots:
     void on_pushButtonConnexion_clicked();
 
 
+    void on_pushButton_clicked();
+
 private:
     Ui::LoginDialog *ui;
     Administration * admin;

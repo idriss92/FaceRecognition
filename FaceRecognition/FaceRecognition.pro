@@ -26,7 +26,8 @@ SOURCES +=\
     main.cpp \
     personne.cpp \
     service.cpp \
-    identifier.cpp
+    identifier.cpp \
+    informations.cpp
 
 HEADERS  += mainwindow.h \
     administration.h \
@@ -40,7 +41,8 @@ HEADERS  += mainwindow.h \
     capture.h \
     personne.h \
     service.h \
-    identifier.h
+    identifier.h \
+    informations.h
 
 FORMS    += mainwindow.ui \
     administration.ui \
@@ -50,7 +52,8 @@ FORMS    += mainwindow.ui \
     ajouterdepartement.ui \
     recognize.ui \
     identifier.ui \
-    employe.ui
+    employe.ui \
+    informations.ui
 
 
 INCLUDEPATH += /usr/local/include/opencv

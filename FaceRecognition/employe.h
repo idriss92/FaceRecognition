@@ -28,6 +28,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_Authentifier_clicked();
+
 private:
     Ui::Employe *ui;
     AjouterEmploye * f_ajouterEmploye;

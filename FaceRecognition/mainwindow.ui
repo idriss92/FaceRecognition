@@ -6,48 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>777</width>
-    <height>497</height>
+    <width>557</width>
+    <height>487</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>FaceRecognition</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButtonAdmin">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>190</y>
-      <width>261</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Administration</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButtonEmploye">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>190</y>
-      <width>271</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Employe</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="labelEntree">
     <property name="enabled">
      <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>50</y>
+      <x>140</x>
+      <y>0</y>
       <width>301</width>
       <height>61</height>
      </rect>
@@ -65,8 +39,54 @@
      <number>2</number>
     </property>
     <property name="text">
-     <string>Gestionnaire</string>
+     <string>Face Recognition</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>491</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButtonEmploye">
+       <property name="text">
+        <string>Employe</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../icons/employe_2.jpg</normaloff>../icons/employe_2.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>217</width>
+         <height>194</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonAdmin">
+       <property name="text">
+        <string>ADMIN</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../icons/accés-compte-administrateur.png</normaloff>../icons/accés-compte-administrateur.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>183</width>
+         <height>83</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -74,7 +94,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>777</width>
+     <width>557</width>
      <height>25</height>
     </rect>
    </property>

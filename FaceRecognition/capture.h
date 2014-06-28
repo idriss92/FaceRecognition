@@ -17,13 +17,13 @@ private:
     CvHaarClassifierCascade *cascade;
     CvMemStorage			*storage;
     int key;  char *filename;
-    const char*  nom ;
+    string  nom;
     CvCapture *capture;
     IplImage  *img;
 
 public:
     Capture();
-    Capture( const char*   nom);
+    Capture( string   nom);
     void detectFaces( IplImage *img );
     void init();
     void saveImage(IplImage * image);

@@ -43,3 +43,8 @@ void Employe::on_pushButton_clicked()
     Capture * capture = new Capture(nom);
     capture->init();
 }
+
+void Employe::on_Authentifier_clicked()
+{
+    cout<<"match"<<endl;
+}

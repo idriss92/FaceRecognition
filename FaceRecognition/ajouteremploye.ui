@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>582</width>
-    <height>414</height>
+    <width>408</width>
+    <height>194</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,20 +16,20 @@
   <widget class="QGroupBox" name="groupBoxEmploye">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>10</y>
-     <width>491</width>
-     <height>331</height>
+     <x>-10</x>
+     <y>-30</y>
+     <width>391</width>
+     <height>211</height>
     </rect>
    </property>
    <property name="title">
-    <string>Nouvel employé</string>
+    <string/>
    </property>
    <widget class="QLabel" name="label_nom">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>110</y>
+      <y>90</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -42,7 +42,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>150</y>
+      <y>120</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -55,7 +55,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>190</y>
+      <y>150</y>
       <width>101</width>
       <height>21</height>
      </rect>
@@ -67,9 +67,9 @@
    <widget class="QLineEdit" name="lineEditNom">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>110</y>
-      <width>151</width>
+      <x>120</x>
+      <y>90</y>
+      <width>261</width>
       <height>20</height>
      </rect>
     </property>
@@ -77,9 +77,9 @@
    <widget class="QLineEdit" name="lineEditPrenom">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>150</y>
-      <width>231</width>
+      <x>120</x>
+      <y>120</y>
+      <width>261</width>
       <height>20</height>
      </rect>
     </property>
@@ -87,9 +87,9 @@
    <widget class="QComboBox" name="comboBoxDepartement">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>190</y>
-      <width>231</width>
+      <x>120</x>
+      <y>150</y>
+      <width>261</width>
       <height>22</height>
      </rect>
     </property>
@@ -97,8 +97,8 @@
    <widget class="QPushButton" name="pushButtonAnnuler">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>290</y>
+      <x>160</x>
+      <y>180</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -110,8 +110,8 @@
    <widget class="QPushButton" name="pushButtonEnregistrer">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>300</y>
+      <x>260</x>
+      <y>180</y>
       <width>101</width>
       <height>23</height>
      </rect>
@@ -120,27 +120,17 @@
      <string>Enregistrer</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>70</y>
-      <width>121</width>
-      <height>71</height>
+      <x>110</x>
+      <y>40</y>
+      <width>151</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../icons/icone-personnage.jpg</normaloff>../icons/icone-personnage.jpg</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>100</width>
-      <height>100</height>
-     </size>
+     <string>Nouvel Employé</string>
     </property>
    </widget>
   </widget>

@@ -19,8 +19,8 @@ void MainWindow::on_pushButtonAdmin_clicked()
 {
     login = new LoginDialog (this);
     login->show();
-    admin = new Administration(this);
-    admin->show();
+  /*  admin = new Administration(this);
+    admin->show();*/
 }
 
 void MainWindow::on_pushButtonEmploye_clicked()
