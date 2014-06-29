@@ -1,6 +1,7 @@
 #ifndef CAPTURE_H
 #define CAPTURE_H
 
+/*
 #include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -31,5 +32,5 @@ public:
     void saveImage(IplImage * image);
     void setPath(string path);
 };
-
+*/
 #endif // CAPTURE_H
