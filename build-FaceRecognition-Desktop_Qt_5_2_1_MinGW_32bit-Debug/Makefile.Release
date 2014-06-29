@@ -670,6 +670,7 @@ release/moc_administration.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw4
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
+		../FaceRecognition/administration.h \
 		../FaceRecognition/administration.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\administration.h -o release\moc_administration.cpp
 
@@ -1314,6 +1315,12 @@ release/moc_ajouteremploye.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw4
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
+		../FaceRecognition/administration.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMainWindow \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
+		../FaceRecognition/listeemploye.h \
+		../FaceRecognition/ajouterdepartement.h \
+		../FaceRecognition/ajouteremploye.h \
 		../FaceRecognition/ajouteremploye.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\ajouteremploye.h -o release\moc_ajouteremploye.cpp
 
@@ -2942,6 +2949,11 @@ release/ajouteremploye.o: ../FaceRecognition/ajouteremploye.cpp ../FaceRecogniti
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
+		../FaceRecognition/administration.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMainWindow \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
+		../FaceRecognition/listeemploye.h \
+		../FaceRecognition/ajouterdepartement.h \
 		ui_ajouteremploye.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h \
@@ -2952,12 +2964,7 @@ release/ajouteremploye.o: ../FaceRecognition/ajouteremploye.cpp ../FaceRecogniti
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/logindialog.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtDebug \
-		../FaceRecognition/administration.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMainWindow \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
-		../FaceRecognition/listeemploye.h \
-		../FaceRecognition/ajouterdepartement.h
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ajouteremploye.o ..\FaceRecognition\ajouteremploye.cpp
 
 release/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceRecognition/ajouterdepartement.h \

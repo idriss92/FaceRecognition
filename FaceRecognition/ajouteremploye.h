@@ -5,6 +5,7 @@
 #include <QLineEdit>
 #include <QtSql>
 #include <QSqlDatabase>
+#include <administration.h>
 
 namespace Ui {
 class AjouterEmploye;
@@ -23,8 +24,6 @@ private slots:
     void on_pushButtonEnregistrer_clicked();
 
     void on_pushButtonAnnuler_clicked();
-
-    void on_pushButton_clicked();
 
     void on_pushButtonCharger_clicked();
 

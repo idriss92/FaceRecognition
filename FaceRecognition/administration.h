@@ -26,13 +26,13 @@ private slots:
 
 
 
-    void on_pushButton_clicked();
+    void on_pushButtonListeEmploye_clicked();
 
 private:
     Ui::Administration *ui;
     ListeEmploye * list;
     ajouterdepartement * nouveauDepartement;
-    AjouterEmploye * nouvelEmploye ;
+    //AjouterEmploye * nouvelEmploye ;
 
 };
 

@@ -25,7 +25,7 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
 {
     LoginDialog conn;
     QString nom,prenom, identifiant;
-    identifiant = "29";
+    identifiant = ui->comboBoxDepartement->currentText();
     nom = ui->lineEditNom->text();
     prenom = ui ->lineEditPrenom->text();
 
@@ -44,6 +44,8 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
             QMessageBox::critical(this,tr("Save"),tr("Saved"));
             conn.close();
             this->hide();
+            //admin->show();
+
         }
         else
         {
@@ -59,11 +61,6 @@ void AjouterEmploye::on_pushButtonAnnuler_clicked()
     this->hide();
 }
 
-void AjouterEmploye::on_pushButton_clicked()
-{
-
-}
-
 void AjouterEmploye::on_pushButtonCharger_clicked()
 {
     LoginDialog conn;
@@ -71,8 +68,8 @@ void AjouterEmploye::on_pushButtonCharger_clicked()
 
     conn.connOpen();
     QSqlQuery * qry = new QSqlQuery(conn.mydb);
-
-    qry->prepare("select libelle_service from service");
+    //libelle_service
+    qry->prepare("select id_service from service");
 
     qry->exec();
     modal->setQuery(*qry);

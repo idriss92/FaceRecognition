@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_Administration_t {
     QByteArrayData data[5];
-    char stringdata[104];
+    char stringdata[116];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,11 +33,11 @@ QT_MOC_LITERAL(0, 0, 14),
 QT_MOC_LITERAL(1, 15, 33),
 QT_MOC_LITERAL(2, 49, 0),
 QT_MOC_LITERAL(3, 50, 30),
-QT_MOC_LITERAL(4, 81, 21)
+QT_MOC_LITERAL(4, 81, 33)
     },
     "Administration\0on_pushButtonNouvelDepart_clicked\0"
     "\0on_pushButtonNouvelEmp_clicked\0"
-    "on_pushButton_clicked\0"
+    "on_pushButtonListeEmploye_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -74,7 +74,7 @@ void Administration::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->on_pushButtonNouvelDepart_clicked(); break;
         case 1: _t->on_pushButtonNouvelEmp_clicked(); break;
-        case 2: _t->on_pushButton_clicked(); break;
+        case 2: _t->on_pushButtonListeEmploye_clicked(); break;
         default: ;
         }
     }
