@@ -27,10 +27,10 @@ void LoginDialog::on_pushButtonConnexion_clicked()
     password = ui->lineEditPassword->text();
 
 
-    admin = new Administration(this);
-    admin->show();
+    //admin = new Administration(this);
+    //admin->show();
 
-  /*  if ((username.size() > 0 ) && ( password.size() > 0 )){
+    if ((username.size() > 0 ) && ( password.size() > 0 )){
                 if(!connOpen()){
                     qDebug()<<"Failed to open the database";
                     return ;
@@ -69,11 +69,13 @@ void LoginDialog::on_pushButtonConnexion_clicked()
                 }
       }else{
          QMessageBox::information(this,tr("Informations"),"Informations manquantes");
-    }*/
+    }
 }
 
 
 void LoginDialog::on_pushButton_clicked()
 {
-    this->hide();
+    this->close();
+   // this->hide();
 }
+

@@ -14,58 +14,84 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_LoginDialog
 {
 public:
-    QGroupBox *groupBoxSignIn;
+    QWidget *gridLayoutWidget;
+    QGridLayout *gridLayout;
+    QLineEdit *lineEditUser;
+    QPushButton *pushButtonConnexion;
     QLabel *label;
     QLabel *label_2;
-    QLineEdit *lineEditUser;
     QLineEdit *lineEditPassword;
-    QPushButton *pushButtonConnexion;
+    QPushButton *pushButton;
+    QLabel *label_3;
     QLabel *labelStatut;
 
     void setupUi(QDialog *LoginDialog)
     {
         if (LoginDialog->objectName().isEmpty())
             LoginDialog->setObjectName(QStringLiteral("LoginDialog"));
-        LoginDialog->resize(468, 354);
+        LoginDialog->resize(502, 228);
         LoginDialog->setAutoFillBackground(true);
-        groupBoxSignIn = new QGroupBox(LoginDialog);
-        groupBoxSignIn->setObjectName(QStringLiteral("groupBoxSignIn"));
-        groupBoxSignIn->setGeometry(QRect(90, 70, 271, 181));
-        label = new QLabel(groupBoxSignIn);
+        gridLayoutWidget = new QWidget(LoginDialog);
+        gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
+        gridLayoutWidget->setGeometry(QRect(50, 40, 421, 141));
+        gridLayout = new QGridLayout(gridLayoutWidget);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        lineEditUser = new QLineEdit(gridLayoutWidget);
+        lineEditUser->setObjectName(QStringLiteral("lineEditUser"));
+
+        gridLayout->addWidget(lineEditUser, 0, 1, 1, 1);
+
+        pushButtonConnexion = new QPushButton(gridLayoutWidget);
+        pushButtonConnexion->setObjectName(QStringLiteral("pushButtonConnexion"));
+
+        gridLayout->addWidget(pushButtonConnexion, 2, 1, 1, 1);
+
+        label = new QLabel(gridLayoutWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(30, 40, 51, 16));
         QFont font;
         font.setPointSize(11);
         font.setBold(true);
         font.setWeight(75);
         label->setFont(font);
-        label_2 = new QLabel(groupBoxSignIn);
+
+        gridLayout->addWidget(label, 0, 0, 1, 1);
+
+        label_2 = new QLabel(gridLayoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(20, 100, 81, 16));
         label_2->setFont(font);
-        lineEditUser = new QLineEdit(groupBoxSignIn);
-        lineEditUser->setObjectName(QStringLiteral("lineEditUser"));
-        lineEditUser->setGeometry(QRect(130, 40, 121, 20));
-        lineEditPassword = new QLineEdit(groupBoxSignIn);
+
+        gridLayout->addWidget(label_2, 1, 0, 1, 1);
+
+        lineEditPassword = new QLineEdit(gridLayoutWidget);
         lineEditPassword->setObjectName(QStringLiteral("lineEditPassword"));
-        lineEditPassword->setGeometry(QRect(130, 100, 121, 20));
-        pushButtonConnexion = new QPushButton(groupBoxSignIn);
-        pushButtonConnexion->setObjectName(QStringLiteral("pushButtonConnexion"));
-        pushButtonConnexion->setGeometry(QRect(110, 150, 75, 23));
+        lineEditPassword->setEchoMode(QLineEdit::Password);
+
+        gridLayout->addWidget(lineEditPassword, 1, 1, 1, 1);
+
+        pushButton = new QPushButton(gridLayoutWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        gridLayout->addWidget(pushButton, 2, 0, 1, 1);
+
+        label_3 = new QLabel(LoginDialog);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(30, 10, 101, 31));
         labelStatut = new QLabel(LoginDialog);
         labelStatut->setObjectName(QStringLiteral("labelStatut"));
-        labelStatut->setGeometry(QRect(40, 290, 111, 21));
+        labelStatut->setGeometry(QRect(30, 190, 441, 21));
 
         retranslateUi(LoginDialog);
 
@@ -75,11 +101,12 @@ public:
     void retranslateUi(QDialog *LoginDialog)
     {
         LoginDialog->setWindowTitle(QApplication::translate("LoginDialog", "Login", 0));
-        groupBoxSignIn->setTitle(QApplication::translate("LoginDialog", "Sign In", 0));
+        pushButtonConnexion->setText(QApplication::translate("LoginDialog", "Connexion", 0));
         label->setText(QApplication::translate("LoginDialog", "User", 0));
         label_2->setText(QApplication::translate("LoginDialog", "Password", 0));
-        pushButtonConnexion->setText(QApplication::translate("LoginDialog", "Connexion", 0));
-        labelStatut->setText(QApplication::translate("LoginDialog", "Statut", 0));
+        pushButton->setText(QApplication::translate("LoginDialog", "Annuler", 0));
+        label_3->setText(QApplication::translate("LoginDialog", "Connexion", 0));
+        labelStatut->setText(QString());
     } // retranslateUi
 
 };

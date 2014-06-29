@@ -60,6 +60,6 @@ void rec::prepareCheck(){
 }
 
 
- vector<Mat> rec::getListImg(){
-     return this->listImg;
+Mat rec::getListImg(int indice){
+     return this->listImg.at(indice);
  }

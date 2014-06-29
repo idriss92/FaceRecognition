@@ -34,6 +34,9 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
         QSqlQuery query;
         query.prepare("insert into employe (id_employe,id_service, nom, prenom) values ('"+identifiant+"','"+"0"+"','"+nom+"','"+prenom+"')");
 
+
+
+
         if(query.exec())
         {
             //Capture * capture = new Capture(nom.toStdString());

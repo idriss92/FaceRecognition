@@ -14,9 +14,13 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,24 +28,65 @@ QT_BEGIN_NAMESPACE
 class Ui_Administration
 {
 public:
-    QMenuBar *menubar;
+    QAction *actionNouvelEmploye;
+    QAction *actionListeDesEmployes;
     QWidget *centralwidget;
+    QLabel *label;
+    QPushButton *pushButtonNouvelEmp;
+    QPushButton *pushButtonListeEmp;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
+    QPushButton *pushButtonNouvelDepart;
+    QMenuBar *menubar;
+    QMenu *menuFichier;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *Administration)
     {
         if (Administration->objectName().isEmpty())
             Administration->setObjectName(QStringLiteral("Administration"));
-        Administration->resize(800, 600);
-        menubar = new QMenuBar(Administration);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        Administration->setMenuBar(menubar);
+        Administration->resize(834, 352);
+        actionNouvelEmploye = new QAction(Administration);
+        actionNouvelEmploye->setObjectName(QStringLiteral("actionNouvelEmploye"));
+        actionListeDesEmployes = new QAction(Administration);
+        actionListeDesEmployes->setObjectName(QStringLiteral("actionListeDesEmployes"));
         centralwidget = new QWidget(Administration);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
+        label = new QLabel(centralwidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(220, 20, 281, 41));
+        pushButtonNouvelEmp = new QPushButton(centralwidget);
+        pushButtonNouvelEmp->setObjectName(QStringLiteral("pushButtonNouvelEmp"));
+        pushButtonNouvelEmp->setGeometry(QRect(30, 110, 141, 31));
+        pushButtonListeEmp = new QPushButton(centralwidget);
+        pushButtonListeEmp->setObjectName(QStringLiteral("pushButtonListeEmp"));
+        pushButtonListeEmp->setGeometry(QRect(30, 150, 141, 31));
+        verticalLayoutWidget = new QWidget(centralwidget);
+        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(260, 70, 541, 201));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setSizeConstraint(QLayout::SetMaximumSize);
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButtonNouvelDepart = new QPushButton(verticalLayoutWidget);
+        pushButtonNouvelDepart->setObjectName(QStringLiteral("pushButtonNouvelDepart"));
+
+        verticalLayout->addWidget(pushButtonNouvelDepart);
+
         Administration->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(Administration);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 834, 25));
+        menuFichier = new QMenu(menubar);
+        menuFichier->setObjectName(QStringLiteral("menuFichier"));
+        Administration->setMenuBar(menubar);
         statusbar = new QStatusBar(Administration);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         Administration->setStatusBar(statusbar);
+
+        menubar->addAction(menuFichier->menuAction());
+        menuFichier->addAction(actionNouvelEmploye);
+        menuFichier->addAction(actionListeDesEmployes);
 
         retranslateUi(Administration);
 
@@ -50,7 +95,14 @@ public:
 
     void retranslateUi(QMainWindow *Administration)
     {
-        Administration->setWindowTitle(QApplication::translate("Administration", "MainWindow", 0));
+        Administration->setWindowTitle(QApplication::translate("Administration", "Administration", 0));
+        actionNouvelEmploye->setText(QApplication::translate("Administration", "Nouvel Employ\303\251", 0));
+        actionListeDesEmployes->setText(QApplication::translate("Administration", "Liste des Employ\303\251s", 0));
+        label->setText(QApplication::translate("Administration", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">Presentation Menu</span></p></body></html>", 0));
+        pushButtonNouvelEmp->setText(QApplication::translate("Administration", "Ajouter un employ\303\251", 0));
+        pushButtonListeEmp->setText(QApplication::translate("Administration", "Liste Employ\303\251s", 0));
+        pushButtonNouvelDepart->setText(QApplication::translate("Administration", "Ajouter un service", 0));
+        menuFichier->setTitle(QApplication::translate("Administration", "Fichier", 0));
     } // retranslateUi
 
 };

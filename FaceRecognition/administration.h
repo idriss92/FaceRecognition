@@ -23,7 +23,6 @@ private slots:
 
     void on_pushButtonNouvelEmp_clicked();
 
-    void on_pushButtonListeEmp_clicked();
 
 
 
