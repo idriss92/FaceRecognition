@@ -4,6 +4,7 @@
 #include <QApplication>
 #include "capture.h"
 
+//#include <QtMultimedia/
 #include <iostream>
 using namespace std;
 
@@ -24,7 +25,7 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
 {
     LoginDialog conn;
     QString nom,prenom, identifiant;
-
+    identifiant = "29";
     nom = ui->lineEditNom->text();
     prenom = ui ->lineEditPrenom->text();
 
@@ -35,8 +36,8 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
 
         if(query.exec())
         {
-            Capture * capture = new Capture(nom.toStdString());
-            capture->init();
+            //Capture * capture = new Capture(nom.toStdString());
+            //capture->init();
             QMessageBox::critical(this,tr("Save"),tr("Saved"));
             conn.close();
             this->hide();
