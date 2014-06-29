@@ -33,10 +33,10 @@ public:
     QWidget *centralwidget;
     QLabel *label;
     QPushButton *pushButtonNouvelEmp;
-    QPushButton *pushButtonListeEmp;
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
     QPushButton *pushButtonNouvelDepart;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QMenu *menuFichier;
     QStatusBar *statusbar;
@@ -58,9 +58,6 @@ public:
         pushButtonNouvelEmp = new QPushButton(centralwidget);
         pushButtonNouvelEmp->setObjectName(QStringLiteral("pushButtonNouvelEmp"));
         pushButtonNouvelEmp->setGeometry(QRect(30, 110, 141, 31));
-        pushButtonListeEmp = new QPushButton(centralwidget);
-        pushButtonListeEmp->setObjectName(QStringLiteral("pushButtonListeEmp"));
-        pushButtonListeEmp->setGeometry(QRect(30, 150, 141, 31));
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
         verticalLayoutWidget->setGeometry(QRect(260, 70, 541, 201));
@@ -73,6 +70,9 @@ public:
 
         verticalLayout->addWidget(pushButtonNouvelDepart);
 
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(80, 240, 99, 27));
         Administration->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Administration);
         menubar->setObjectName(QStringLiteral("menubar"));
@@ -100,8 +100,8 @@ public:
         actionListeDesEmployes->setText(QApplication::translate("Administration", "Liste des Employ\303\251s", 0));
         label->setText(QApplication::translate("Administration", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">Presentation Menu</span></p></body></html>", 0));
         pushButtonNouvelEmp->setText(QApplication::translate("Administration", "Ajouter un employ\303\251", 0));
-        pushButtonListeEmp->setText(QApplication::translate("Administration", "Liste Employ\303\251s", 0));
         pushButtonNouvelDepart->setText(QApplication::translate("Administration", "Ajouter un service", 0));
+        pushButton->setText(QApplication::translate("Administration", "PushButton", 0));
         menuFichier->setTitle(QApplication::translate("Administration", "Fichier", 0));
     } // retranslateUi
 
