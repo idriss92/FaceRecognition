@@ -3,7 +3,9 @@
 #include "ajouterdepartement.h"
 #include "listeemploye.h"
 #include "ajouteremploye.h"
-
+#include "listeemploye.h"
+using namespace  std;
+#include <iostream>
 
 Administration::Administration(QWidget *parent) :QMainWindow(parent), ui(new Ui::Administration)
 {
@@ -32,19 +34,17 @@ void Administration::on_pushButtonNouvelDepart_clicked()
 //creation nouvel employé
 void Administration::on_pushButtonNouvelEmp_clicked()
 {
-    nouvelEmploye = new AjouterEmploye();
-    nouvelEmploye->show();
+   /* nouvelEmploye = new AjouterEmploye();
+    nouvelEmploye->show();*/
+
+    ListeEmploye * l = new ListeEmploye();
+    l->show();
 }
 
-//afficher liste des employés
-void Administration::on_pushButtonListeEmp_clicked()
-{
-
-}
 
 
 
 void Administration::on_pushButton_clicked()
 {
-
+    cout<<"ooooooook";
 }
