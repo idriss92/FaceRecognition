@@ -63,3 +63,20 @@ void AjouterEmploye::on_pushButton_clicked()
 {
 
 }
+
+void AjouterEmploye::on_pushButtonCharger_clicked()
+{
+    LoginDialog conn;
+    QSqlQueryModel * modal = new QSqlQueryModel();
+
+    conn.connOpen();
+    QSqlQuery * qry = new QSqlQuery(conn.mydb);
+
+    qry->prepare("select libelle_service from service");
+
+    qry->exec();
+    modal->setQuery(*qry);
+    ui->comboBoxDepartement->setModel(modal);
+    conn.connClose();
+    qDebug()<<(modal->rowCount());
+}

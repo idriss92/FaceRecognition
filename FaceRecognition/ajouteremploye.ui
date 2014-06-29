@@ -89,7 +89,7 @@
      <rect>
       <x>120</x>
       <y>150</y>
-      <width>261</width>
+      <width>181</width>
       <height>22</height>
      </rect>
     </property>
@@ -131,6 +131,19 @@
     </property>
     <property name="text">
      <string>Nouvel Employé</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCharger">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Charger</string>
     </property>
    </widget>
   </widget>

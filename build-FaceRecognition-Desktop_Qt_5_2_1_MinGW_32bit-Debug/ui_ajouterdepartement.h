@@ -37,7 +37,7 @@ public:
     {
         if (ajouterdepartement->objectName().isEmpty())
             ajouterdepartement->setObjectName(QStringLiteral("ajouterdepartement"));
-        ajouterdepartement->resize(358, 162);
+        ajouterdepartement->resize(355, 182);
         groupBoxNouveauDepartement = new QGroupBox(ajouterdepartement);
         groupBoxNouveauDepartement->setObjectName(QStringLiteral("groupBoxNouveauDepartement"));
         groupBoxNouveauDepartement->setGeometry(QRect(0, 0, 311, 161));

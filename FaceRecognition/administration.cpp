@@ -34,11 +34,14 @@ void Administration::on_pushButtonNouvelDepart_clicked()
 //creation nouvel employé
 void Administration::on_pushButtonNouvelEmp_clicked()
 {
-   /* nouvelEmploye = new AjouterEmploye();
-    nouvelEmploye->show();*/
+    nouvelEmploye = new AjouterEmploye();
+    nouvelEmploye->show();
+
+    /*
 
     ListeEmploye * l = new ListeEmploye();
     l->show();
+    */
 }
 
 

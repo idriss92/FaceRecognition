@@ -26,6 +26,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButtonCharger_clicked();
+
 private:
     Ui::AjouterEmploye *ui;
 };

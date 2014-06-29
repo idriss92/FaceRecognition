@@ -36,6 +36,7 @@ public:
     QPushButton *pushButtonAnnuler;
     QPushButton *pushButtonEnregistrer;
     QLabel *label;
+    QPushButton *pushButtonCharger;
 
     void setupUi(QWidget *AjouterEmploye)
     {
@@ -62,7 +63,7 @@ public:
         lineEditPrenom->setGeometry(QRect(120, 120, 261, 20));
         comboBoxDepartement = new QComboBox(groupBoxEmploye);
         comboBoxDepartement->setObjectName(QStringLiteral("comboBoxDepartement"));
-        comboBoxDepartement->setGeometry(QRect(120, 150, 261, 22));
+        comboBoxDepartement->setGeometry(QRect(120, 150, 181, 22));
         pushButtonAnnuler = new QPushButton(groupBoxEmploye);
         pushButtonAnnuler->setObjectName(QStringLiteral("pushButtonAnnuler"));
         pushButtonAnnuler->setGeometry(QRect(160, 180, 75, 23));
@@ -72,6 +73,9 @@ public:
         label = new QLabel(groupBoxEmploye);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(110, 40, 151, 17));
+        pushButtonCharger = new QPushButton(groupBoxEmploye);
+        pushButtonCharger->setObjectName(QStringLiteral("pushButtonCharger"));
+        pushButtonCharger->setGeometry(QRect(310, 150, 75, 23));
 
         retranslateUi(AjouterEmploye);
 
@@ -88,6 +92,7 @@ public:
         pushButtonAnnuler->setText(QApplication::translate("AjouterEmploye", "Annuler", 0));
         pushButtonEnregistrer->setText(QApplication::translate("AjouterEmploye", "Enregistrer", 0));
         label->setText(QApplication::translate("AjouterEmploye", "Nouvel Employ\303\251", 0));
+        pushButtonCharger->setText(QApplication::translate("AjouterEmploye", "Charger", 0));
     } // retranslateUi
 
 };
