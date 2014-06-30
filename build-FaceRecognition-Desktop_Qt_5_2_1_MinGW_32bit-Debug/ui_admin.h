@@ -14,7 +14,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCalendarWidget>
-#include <QtWidgets/QColumnView>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHeaderView>
@@ -23,6 +22,7 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -35,16 +35,17 @@ public:
     QGroupBox *groupBoxRecherche;
     QLineEdit *lineEditRecherche;
     QPushButton *pushButtonRecherche;
-    QColumnView *columnViewEmploye;
+    QTableView *tableViewEmploye;
     QGroupBox *groupBox_2;
-    QColumnView *columnViewPresence;
+    QTableView *tableViewListePresence;
     QGroupBox *groupBoxAbsence;
-    QColumnView *columnViewAbsences;
+    QTableView *tableViewListeAbsence;
     QPushButton *pushButtonConsulter;
     QPushButton *pushButtonModifier;
     QPushButton *pushButtonSupprimer;
     QPushButton *pushButtonConsulter_2;
     QFrame *line;
+    QPushButton *pushButtonChargerEmp;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -67,21 +68,21 @@ public:
         pushButtonRecherche = new QPushButton(groupBoxRecherche);
         pushButtonRecherche->setObjectName(QStringLiteral("pushButtonRecherche"));
         pushButtonRecherche->setGeometry(QRect(360, 40, 101, 23));
-        columnViewEmploye = new QColumnView(groupBoxRecherche);
-        columnViewEmploye->setObjectName(QStringLiteral("columnViewEmploye"));
-        columnViewEmploye->setGeometry(QRect(40, 80, 421, 192));
+        tableViewEmploye = new QTableView(groupBoxRecherche);
+        tableViewEmploye->setObjectName(QStringLiteral("tableViewEmploye"));
+        tableViewEmploye->setGeometry(QRect(40, 80, 421, 192));
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
         groupBox_2->setGeometry(QRect(9, 329, 431, 221));
-        columnViewPresence = new QColumnView(groupBox_2);
-        columnViewPresence->setObjectName(QStringLiteral("columnViewPresence"));
-        columnViewPresence->setGeometry(QRect(10, 20, 411, 192));
+        tableViewListePresence = new QTableView(groupBox_2);
+        tableViewListePresence->setObjectName(QStringLiteral("tableViewListePresence"));
+        tableViewListePresence->setGeometry(QRect(0, 20, 421, 192));
         groupBoxAbsence = new QGroupBox(centralwidget);
         groupBoxAbsence->setObjectName(QStringLiteral("groupBoxAbsence"));
         groupBoxAbsence->setGeometry(QRect(460, 330, 431, 221));
-        columnViewAbsences = new QColumnView(groupBoxAbsence);
-        columnViewAbsences->setObjectName(QStringLiteral("columnViewAbsences"));
-        columnViewAbsences->setGeometry(QRect(10, 20, 411, 192));
+        tableViewListeAbsence = new QTableView(groupBoxAbsence);
+        tableViewListeAbsence->setObjectName(QStringLiteral("tableViewListeAbsence"));
+        tableViewListeAbsence->setGeometry(QRect(10, 20, 421, 192));
         pushButtonConsulter = new QPushButton(centralwidget);
         pushButtonConsulter->setObjectName(QStringLiteral("pushButtonConsulter"));
         pushButtonConsulter->setGeometry(QRect(784, 40, 101, 23));
@@ -99,6 +100,9 @@ public:
         line->setGeometry(QRect(10, 310, 891, 20));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
+        pushButtonChargerEmp = new QPushButton(centralwidget);
+        pushButtonChargerEmp->setObjectName(QStringLiteral("pushButtonChargerEmp"));
+        pushButtonChargerEmp->setGeometry(QRect(780, 240, 101, 23));
         Admin->setCentralWidget(centralwidget);
         calendarWidget->raise();
         groupBoxRecherche->raise();
@@ -109,6 +113,7 @@ public:
         pushButtonConsulter_2->raise();
         line->raise();
         pushButtonConsulter->raise();
+        pushButtonChargerEmp->raise();
         menubar = new QMenuBar(Admin);
         menubar->setObjectName(QStringLiteral("menubar"));
         menubar->setGeometry(QRect(0, 0, 916, 21));
@@ -133,6 +138,7 @@ public:
         pushButtonModifier->setText(QApplication::translate("Admin", "Modifier", 0));
         pushButtonSupprimer->setText(QApplication::translate("Admin", "Supprimer", 0));
         pushButtonConsulter_2->setText(QApplication::translate("Admin", "Consulter absences", 0));
+        pushButtonChargerEmp->setText(QApplication::translate("Admin", "Charger Employ\303\251s", 0));
     } // retranslateUi
 
 };

@@ -5,6 +5,7 @@
 #include <listeemploye.h>
 #include <ajouterdepartement.h>
 #include <ajouteremploye.h>
+#include <ajouterposte.h>
 
 namespace Ui {
 class Administration;
@@ -34,6 +35,8 @@ private:
     Ui::Administration *ui;
     ListeEmploye * list;
     ajouterdepartement * nouveauDepartement;
+    AjouterPoste * nouveauPoste;
+    //AjouterEmploye * nouvelEmploye;
     //AjouterEmploye * nouvelEmploye ;
 
 };

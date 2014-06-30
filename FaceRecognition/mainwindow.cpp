@@ -4,7 +4,7 @@ using namespace std;
 #include <iostream>
 #include "logindialog.h"
 #include "identifier.h"
-
+#include "admin.h"
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -26,6 +26,8 @@ void MainWindow::on_pushButtonAdmin_clicked()
 
 void MainWindow::on_pushButtonEmploye_clicked()
 {
+    administre = new Admin(this);
+    administre->show();
   //f_employe = new Employe(this);
   //f_employe->show();
    // this->

@@ -7,6 +7,7 @@
 #include "logindialog.h"
 #include "admin.h"
 
+
 namespace Ui {
 class MainWindow;
 }
@@ -29,10 +30,11 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Administration * admin;
+    Administration * admir;
 
     LoginDialog * login;
     Employe * f_employe;
+    Admin * administre;
 
 };
 

@@ -28,8 +28,7 @@ void Admin::on_pushButtonRecherche_clicked()
     qry->exec();
     QSqlQueryModel * modal = new QSqlQueryModel();
     modal->setQuery(*qry);
-
-    ui->columnViewEmploye->setModel(modal);
+    ui->tableViewEmploye->setModel(modal);
     conn.close();
 
 }
@@ -49,6 +48,9 @@ void Admin::on_pushButtonModifier_clicked()
 //supprimer employé sélectionner
 void Admin::on_pushButtonSupprimer_clicked()
 {
+    LoginDialog conn;
+    conn.connOpen();
+    //ui->tableViewEmploye->selectColumn();
 
 }
 
@@ -56,4 +58,20 @@ void Admin::on_pushButtonSupprimer_clicked()
 void Admin::on_pushButtonConsulter_2_clicked()
 {
 
+}
+
+void Admin::on_pushButtonChargerEmp_clicked()
+{
+    LoginDialog conn;
+    conn.connOpen();
+    QSqlQuery * qry = new QSqlQuery(conn.mydb);
+
+    qry->prepare("select nom, prenom, sexe, Grade from employe");
+
+    qry->exec();
+    QSqlQueryModel * modal = new QSqlQueryModel();
+    modal->setQuery(*qry);
+
+    ui->tableViewEmploye->setModel(modal);
+    conn.close();
 }

@@ -59,7 +59,7 @@
       <string>Recherche</string>
      </property>
     </widget>
-    <widget class="QColumnView" name="columnViewEmploye">
+    <widget class="QTableView" name="tableViewEmploye">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -82,12 +82,12 @@
     <property name="title">
      <string>Liste des présences</string>
     </property>
-    <widget class="QColumnView" name="columnViewPresence">
+    <widget class="QTableView" name="tableViewListePresence">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>0</x>
        <y>20</y>
-       <width>411</width>
+       <width>421</width>
        <height>192</height>
       </rect>
      </property>
@@ -105,12 +105,12 @@
     <property name="title">
      <string>Liste des absences</string>
     </property>
-    <widget class="QColumnView" name="columnViewAbsences">
+    <widget class="QTableView" name="tableViewListeAbsence">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>411</width>
+       <width>421</width>
        <height>192</height>
       </rect>
      </property>
@@ -181,6 +181,19 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButtonChargerEmp">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>240</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Charger Employés</string>
+    </property>
+   </widget>
    <zorder>calendarWidget</zorder>
    <zorder>groupBoxRecherche</zorder>
    <zorder>groupBox_2</zorder>
@@ -190,6 +203,7 @@
    <zorder>pushButtonConsulter_2</zorder>
    <zorder>line</zorder>
    <zorder>pushButtonConsulter</zorder>
+   <zorder>pushButtonChargerEmp</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

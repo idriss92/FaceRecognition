@@ -65,15 +65,21 @@ void AjouterEmploye::on_pushButtonCharger_clicked()
 {
     LoginDialog conn;
     QSqlQueryModel * modal = new QSqlQueryModel();
+    QSqlQueryModel * modal2 = new QSqlQueryModel();
 
     conn.connOpen();
     QSqlQuery * qry = new QSqlQuery(conn.mydb);
+    QSqlQuery * qry2 = new QSqlQuery(conn.mydb);
     //libelle_service
     qry->prepare("select id_service from service");
-
+    qry2->prepare("select poste from poste");
+    qry2->exec();
     qry->exec();
+
     modal->setQuery(*qry);
+    modal2->setQuery(*qry2);
     ui->comboBoxDepartement->setModel(modal);
+    ui->comboBoxPoste->setModel(modal2);
     conn.connClose();
     qDebug()<<(modal->rowCount());
 }

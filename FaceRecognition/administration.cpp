@@ -37,18 +37,20 @@ void Administration::on_pushButtonNouvelDepart_clicked()
 void Administration::on_pushButtonNouvelEmp_clicked()
 {
     AjouterEmploye *nouvelEmploye = new AjouterEmploye();
-    nouvelEmploye = new AjouterEmploye();
+    //nouvelEmploye = new AjouterEmploye(this);
     nouvelEmploye->show();
 }
 
 //ouverture formulaire d'affichage des employés
 void Administration::on_pushButtonListeEmploye_clicked()
 {
-    ListeEmploye * liste = new ListeEmploye();
-    liste->show();
+    //ListeEmploye * liste = new ListeEmploye();
+    list = new ListeEmploye(this);
+    list->show();
 }
 
 void Administration::on_pushButtonAjouterPoste_clicked()
 {
-
+    nouveauPoste = new AjouterPoste(this);
+    nouveauPoste->show();
 }

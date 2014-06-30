@@ -405,6 +405,7 @@ debug/moc_mainwindow.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/i
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
+		../FaceRecognition/ajouterposte.h \
 		../FaceRecognition/employe.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/rec.h \
@@ -680,6 +681,7 @@ debug/moc_administration.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
 		../FaceRecognition/administration.h \
+		../FaceRecognition/ajouterposte.h \
 		../FaceRecognition/administration.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\administration.h -o debug\moc_administration.cpp
 
@@ -950,6 +952,7 @@ debug/moc_logindialog.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
+		../FaceRecognition/ajouterposte.h \
 		../FaceRecognition/logindialog.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\logindialog.h -o debug\moc_logindialog.cpp
 
@@ -1330,6 +1333,7 @@ debug/moc_ajouteremploye.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_
 		../FaceRecognition/listeemploye.h \
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
+		../FaceRecognition/ajouterposte.h \
 		../FaceRecognition/ajouteremploye.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\ajouteremploye.h -o debug\moc_ajouteremploye.cpp
 
@@ -2105,6 +2109,7 @@ debug/mainwindow.o: ../FaceRecognition/mainwindow.cpp ../FaceRecognition/mainwin
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
+		../FaceRecognition/ajouterposte.h \
 		../FaceRecognition/employe.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/rec.h \
@@ -2381,6 +2386,7 @@ debug/administration.o: ../FaceRecognition/administration.cpp ../FaceRecognition
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
+		../FaceRecognition/ajouterposte.h \
 		ui_administration.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\administration.o ..\FaceRecognition\administration.cpp
 
@@ -2652,6 +2658,7 @@ debug/logindialog.o: ../FaceRecognition/logindialog.cpp ../FaceRecognition/login
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
+		../FaceRecognition/ajouterposte.h \
 		ui_logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QDebug \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QFileInfo \
@@ -2928,6 +2935,7 @@ debug/listeemploye.o: ../FaceRecognition/listeemploye.cpp ../FaceRecognition/lis
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
+		../FaceRecognition/ajouterposte.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QCalendarWidget \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qcalendarwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\listeemploye.o ..\FaceRecognition\listeemploye.cpp
@@ -3198,6 +3206,7 @@ debug/ajouteremploye.o: ../FaceRecognition/ajouteremploye.cpp ../FaceRecognition
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
 		../FaceRecognition/listeemploye.h \
 		../FaceRecognition/ajouterdepartement.h \
+		../FaceRecognition/ajouterposte.h \
 		ui_ajouteremploye.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h \
@@ -3480,6 +3489,7 @@ debug/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceRec
 		../FaceRecognition/listeemploye.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouteremploye.h \
+		../FaceRecognition/ajouterposte.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ajouterdepartement.o ..\FaceRecognition\ajouterdepartement.cpp
@@ -3751,6 +3761,7 @@ debug/main.o: ../FaceRecognition/main.cpp ../FaceRecognition/mainwindow.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
+		../FaceRecognition/ajouterposte.h \
 		../FaceRecognition/employe.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/rec.h \
@@ -4153,7 +4164,8 @@ debug/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../FaceRecognition/listeemploye.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouterdepartement.h \
-		../FaceRecognition/ajouteremploye.h
+		../FaceRecognition/ajouteremploye.h \
+		../FaceRecognition/ajouterposte.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\admin.o ..\FaceRecognition\admin.cpp
 
 debug/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/ajouterposte.h \
@@ -4425,7 +4437,8 @@ debug/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/ajo
 		../FaceRecognition/listeemploye.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouterdepartement.h \
-		../FaceRecognition/ajouteremploye.h
+		../FaceRecognition/ajouteremploye.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ajouterposte.o ..\FaceRecognition\ajouterposte.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
