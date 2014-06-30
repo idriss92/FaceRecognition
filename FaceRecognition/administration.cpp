@@ -47,3 +47,8 @@ void Administration::on_pushButtonListeEmploye_clicked()
     ListeEmploye * liste = new ListeEmploye();
     liste->show();
 }
+
+void Administration::on_pushButtonAjouterPoste_clicked()
+{
+
+}

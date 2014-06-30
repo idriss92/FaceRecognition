@@ -36,6 +36,19 @@
     <string>Load</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushAbsences">
+   <property name="geometry">
+    <rect>
+     <x>254</x>
+     <y>232</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Absences</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

@@ -1,6 +1,7 @@
 #include "listeemploye.h"
 #include "ui_listeemploye.h"
 #include "logindialog.h"
+#include<QCalendarWidget>
 ListeEmploye::ListeEmploye(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ListeEmploye)
@@ -29,6 +30,4 @@ void ListeEmploye::on_pushButton_clicked()
     ui->tableView->setModel(modal);
 
     conn.close();
-
-
 }

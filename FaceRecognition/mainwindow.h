@@ -5,7 +5,7 @@
 #include "administration.h"
 #include "employe.h"
 #include "logindialog.h"
-#include "employe.h"
+#include "admin.h"
 
 namespace Ui {
 class MainWindow;

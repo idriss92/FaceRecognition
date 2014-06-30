@@ -8,6 +8,8 @@ INPUT(
 ./release\main.o
 ./release\service.o
 ./release\informations.o
+./release\admin.o
+./release\ajouterposte.o
 ./release\moc_mainwindow.o
 ./release\moc_administration.o
 ./release\moc_logindialog.o
@@ -15,4 +17,6 @@ INPUT(
 ./release\moc_ajouteremploye.o
 ./release\moc_ajouterdepartement.o
 ./release\moc_informations.o
+./release\moc_admin.o
+./release\moc_ajouterposte.o
 );

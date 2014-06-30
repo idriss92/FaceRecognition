@@ -28,6 +28,6 @@ void MainWindow::on_pushButtonEmploye_clicked()
 {
   //f_employe = new Employe(this);
   //f_employe->show();
-  //this->hide();
+   // this->
 }
 

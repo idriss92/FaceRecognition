@@ -8,6 +8,8 @@ INPUT(
 ./debug\main.o
 ./debug\service.o
 ./debug\informations.o
+./debug\admin.o
+./debug\ajouterposte.o
 ./debug\moc_mainwindow.o
 ./debug\moc_administration.o
 ./debug\moc_logindialog.o
@@ -15,4 +17,6 @@ INPUT(
 ./debug\moc_ajouteremploye.o
 ./debug\moc_ajouterdepartement.o
 ./debug\moc_informations.o
+./debug\moc_admin.o
+./debug\moc_ajouterposte.o
 );
