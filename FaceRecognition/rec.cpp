@@ -37,6 +37,9 @@ void rec::getPersonnes(){
           if (ent->d_name[0] != '.'){
 
               string fname = ent->d_name;
+
+              this->chemins.push_back(fname);
+
               listImg.push_back(imread(path.c_str() + fname, CV_LOAD_IMAGE_GRAYSCALE));
               labels.push_back(lab);
               cout<<path.c_str() + fname<<endl;
@@ -62,4 +65,7 @@ void rec::prepareCheck(){
 
 Mat rec::getListImg(int indice){
      return this->listImg.at(indice);
+ }
+ String  rec::getChemins(int indice){
+     return this->chemins.at(indice);
  }

@@ -30,7 +30,6 @@ Capture::Capture()
 }
 void Capture::init(){
 
-
    storage = cvCreateMemStorage( 0 );
    capture = cvCreateCameraCapture(CV_CAP_ANY);
    cvNamedWindow( "Window-FT", CV_WINDOW_AUTOSIZE );
@@ -97,7 +96,6 @@ void Capture::detectFaces( IplImage *img )
 
 void Capture::saveImage(IplImage * frame){
 
-
      IplImage* subImg =0;
      subImg = cvCreateImage(cvGetSize(frame), frame->depth, frame->nChannels);
      cvCopy(frame, subImg, NULL);
@@ -109,18 +107,22 @@ void Capture::saveImage(IplImage * frame){
 
      cvCvtColor(dst, dstGray, CV_RGB2GRAY);
 
+     string name=this->nom;
+     string ext= ".jpg";
+     string allPath= this->path+name+ext;
 
-
-
-     std::string name=this->nom;
-     std::string ext= ".jpg";
-     std::string allPath= this->path+name+ext;
-
-    cout<<allPath<<endl;
-      cvSaveImage( allPath.c_str(), dstGray);
+     cout<<allPath<<endl;
+     cvSaveImage( allPath.c_str(), dstGray);
 
 }
 
 void Capture::setPath(string path){
     this->path = path;
+}
+
+
+void Capture::stop(){
+    cvReleaseCapture( &capture );
+
+
 }

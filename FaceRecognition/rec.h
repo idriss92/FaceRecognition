@@ -16,6 +16,7 @@ private:
 
     vector<int> labels;
     vector<Mat> listImg;
+    vector<String> chemins;
     String path;
     Ptr<FaceRecognizer> model;
 public:
@@ -24,6 +25,8 @@ public:
     void getPersonnes();
     void prepareCheck();
     Mat getListImg(int indice);
+    String getChemins(int indice);
+
 };
 
 #endif // REC_H

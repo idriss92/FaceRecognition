@@ -27,7 +27,7 @@
      <item>
       <widget class="QPushButton" name="Authentifier">
        <property name="text">
-        <string>Authentifier</string>
+        <string>S'authentifier</string>
        </property>
        <property name="iconSize">
         <size>

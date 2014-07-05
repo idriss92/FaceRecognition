@@ -30,6 +30,7 @@ public:
     void init();
     void saveImage(IplImage * image);
     void setPath(string path);
+    void stop();
 };
 
 #endif // CAPTURE_H

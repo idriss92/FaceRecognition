@@ -29,20 +29,34 @@ Employe::~Employe()
 void Employe::on_Authentifier_clicked()
 {
     QMessageBox::information(this,tr("Informations"),"Demarer la capture. Placer vous face à la caméra");
+     Capture * capture = new Capture("tmp");
+    try{
 
-    Capture * capture = new Capture("tmp");
-    capture->setPath("/home/joaany/search/");
-    capture->init();
+        Capture * capture = new Capture("tmp");
+        capture->setPath("/home/joaany/search/");
+        capture->init();
 
-    QMessageBox::information(this,tr("Informations"),"Reconnaissance");
+      QMessageBox::information(this,tr("Informations"),"Reconnaissance");
 
-    rec * mrec = new rec();
-    mrec->getPersonnes();
-    mrec->prepareCheck();
-    string file = "/home/joaany/search/tmp.jpg" ;
-    int fnum = mrec->Match(file);
 
-    Mat img = mrec->getListImg(fnum);
-    cout<<fnum<<endl;
+        rec * mrec = new rec();
+        mrec->getPersonnes();
+        mrec->prepareCheck();
+        string file = "/home/joaany/search/tmp.jpg" ;
+        int fnum = mrec->Match(file);
+        Mat img = mrec->getListImg(fnum);
+        String val =   mrec->getChemins(fnum);
+
+        val.replace(val.begin() , val.end() , '.jpg', ' ');
+
+        QMessageBox::information(this,tr("Informations"), val.c_str() );
+
+    }catch(Exception e){
+
+        QMessageBox::information(this,tr("Informations"),"Aucun visage détecté");
+    }
+
+ capture->stop();
+
 
 }
