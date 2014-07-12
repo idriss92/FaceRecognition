@@ -31,17 +31,26 @@ void Administration::on_pushButtonNouvelDepart_clicked()
     nouveauDepartement = new ajouterdepartement(this);
     nouveauDepartement->show();
 }
+
+
 //creation nouvel employé
 void Administration::on_pushButtonNouvelEmp_clicked()
 {
-    nouvelEmploye = new AjouterEmploye();
+    AjouterEmploye *nouvelEmploye = new AjouterEmploye();
+
     nouvelEmploye->show();
-
-
 }
 
-void Administration::on_liste_employe_clicked()
+//ouverture formulaire d'affichage des employés
+void Administration::on_pushButtonListeEmploye_clicked()
 {
-    ListeEmploye * l = new ListeEmploye();
-    l->show();
+
+    list = new ListeEmploye(this);
+    list->show();
+}
+
+void Administration::on_pushButtonAjouterPoste_clicked()
+{
+    nouveauPoste = new AjouterPoste(this);
+    nouveauPoste->show();
 }

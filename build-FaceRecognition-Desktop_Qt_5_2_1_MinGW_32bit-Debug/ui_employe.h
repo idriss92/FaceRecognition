@@ -16,7 +16,9 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,21 +26,37 @@ QT_BEGIN_NAMESPACE
 class Ui_Employe
 {
 public:
-    QMenuBar *menubar;
     QWidget *centralwidget;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
+    QPushButton *Authentifier;
+    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *Employe)
     {
         if (Employe->objectName().isEmpty())
             Employe->setObjectName(QStringLiteral("Employe"));
-        Employe->resize(800, 600);
-        menubar = new QMenuBar(Employe);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        Employe->setMenuBar(menubar);
+        Employe->resize(537, 229);
         centralwidget = new QWidget(Employe);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
+        verticalLayoutWidget = new QWidget(centralwidget);
+        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(20, 20, 501, 161));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        Authentifier = new QPushButton(verticalLayoutWidget);
+        Authentifier->setObjectName(QStringLiteral("Authentifier"));
+        Authentifier->setIconSize(QSize(16, 58));
+
+        verticalLayout->addWidget(Authentifier);
+
         Employe->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(Employe);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 537, 25));
+        Employe->setMenuBar(menubar);
         statusbar = new QStatusBar(Employe);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         Employe->setStatusBar(statusbar);
@@ -50,7 +68,8 @@ public:
 
     void retranslateUi(QMainWindow *Employe)
     {
-        Employe->setWindowTitle(QApplication::translate("Employe", "MainWindow", 0));
+        Employe->setWindowTitle(QApplication::translate("Employe", "Employe", 0));
+        Authentifier->setText(QApplication::translate("Employe", "Authentifier", 0));
     } // retranslateUi
 
 };

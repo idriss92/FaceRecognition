@@ -5,6 +5,7 @@
 #include <listeemploye.h>
 #include <ajouterdepartement.h>
 #include <ajouteremploye.h>
+#include <ajouterposte.h>
 
 namespace Ui {
 class Administration;
@@ -26,13 +27,17 @@ private slots:
 
 
 
-    void on_liste_employe_clicked();
+    void on_pushButtonListeEmploye_clicked();
+
+    void on_pushButtonAjouterPoste_clicked();
 
 private:
     Ui::Administration *ui;
     ListeEmploye * list;
     ajouterdepartement * nouveauDepartement;
-    AjouterEmploye * nouvelEmploye ;
+    AjouterPoste * nouveauPoste;
+    //AjouterEmploye * nouvelEmploye;
+    //AjouterEmploye * nouvelEmploye ;
 
 };
 

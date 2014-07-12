@@ -20,18 +20,20 @@ SOURCES +=\
     listeemploye.cpp \
     ajouteremploye.cpp \
     ajouterdepartement.cpp \
-    recognizer.cpp \
+  recognizer.cpp \
     rec.cpp \
     capture.cpp \
     main.cpp \
     personne.cpp \
     service.cpp \
     identifier.cpp \
-    informations.cpp
+    informations.cpp \
+    admin.cpp \
+    ajouterposte.cpp
 
 HEADERS  += mainwindow.h \
     administration.h \
-    employe.h \
+   employe.h \
     logindialog.h \
     listeemploye.h \
     ajouteremploye.h \
@@ -41,8 +43,10 @@ HEADERS  += mainwindow.h \
     capture.h \
     personne.h \
     service.h \
-    identifier.h \
-    informations.h
+   identifier.h \
+    informations.h \
+    admin.h \
+    ajouterposte.h
 
 FORMS    += mainwindow.ui \
     administration.ui \
@@ -53,8 +57,9 @@ FORMS    += mainwindow.ui \
     recognize.ui \
     identifier.ui \
     employe.ui \
-    informations.ui
-
+    informations.ui \
+    admin.ui \
+    ajouterposte.ui
 
 INCLUDEPATH += /usr/local/include/opencv
 LIBS += -L/usr/local/lib \

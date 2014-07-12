@@ -32,7 +32,7 @@ void ajouterdepartement::on_pushButtonEnregistrer_clicked()
         //ouvrons la connexion
         conn.connOpen();
         QSqlQuery query;
-        query.prepare("insert into Departement (Id, NomDepartement) values ('"+identifiant+"','"+nomDepartement+"')");
+        query.prepare("insert into service (id_service, libelle_service) values ('"+identifiant+"','"+nomDepartement+"')");
 
         if(query.exec())
         {

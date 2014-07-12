@@ -6,47 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>591</width>
-    <height>222</height>
+    <width>521</width>
+    <height>301</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Administration</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>20</y>
-      <width>281</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Presentation Menu&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>40</x>
       <y>60</y>
-      <width>541</width>
-      <height>101</height>
+      <width>441</width>
+      <height>181</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <property name="sizeConstraint">
       <enum>QLayout::SetMaximumSize</enum>
      </property>
-     <item>
-      <widget class="QPushButton" name="pushButtonNouvelEmp">
-       <property name="text">
-        <string>Ajouter un employé</string>
-       </property>
-      </widget>
-     </item>
      <item>
       <widget class="QPushButton" name="pushButtonNouvelDepart">
        <property name="text">
@@ -55,13 +35,40 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="liste_employe">
+      <widget class="QPushButton" name="pushButtonNouvelEmp">
        <property name="text">
-        <string>Listes des employés</string>
+        <string>Ajouter un employé</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonAjouterPoste">
+       <property name="text">
+        <string>Ajouter Poste</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonListeEmploye">
+       <property name="text">
+        <string>Liste des employés</string>
        </property>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Administration</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -69,7 +76,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>591</width>
+     <width>521</width>
      <height>25</height>
     </rect>
    </property>

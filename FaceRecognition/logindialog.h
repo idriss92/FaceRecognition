@@ -53,4 +53,4 @@ private:
     Administration * admin;
 };
 
-#endif // LOGINDIALOG_H
+#endif LOGINDIALOG_H

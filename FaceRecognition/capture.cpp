@@ -122,7 +122,7 @@ void Capture::setPath(string path){
 
 
 void Capture::stop(){
-    cvReleaseCapture( &capture );
 
+  cvReleaseCapture(&capture);
 
 }
