@@ -45,3 +45,8 @@ void AjouterPoste::on_pushButtonEnregistrer_clicked()
        QMessageBox::information(this,tr("Informations"),"Informations manquantes");
     }
 }
+
+void AjouterPoste::on_pushButtonAnnuler_clicked()
+{
+    this->close();
+}

@@ -28,7 +28,7 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
     identifiant = ui->comboBoxDepartement->currentText();
     nom = ui->lineEditNom->text();
     prenom = ui ->lineEditPrenom->text();
-    String v = "45";
+    //String v = "45";
     if (( prenom.size() > 0) && ( nom.size() > 0)){
         conn.connOpen();
         QSqlQuery query;
@@ -52,9 +52,9 @@ void AjouterEmploye::on_pushButtonEnregistrer_clicked()
 
         if(query.exec())
         {
-            Capture * capture = new Capture(nom.toStdString());
-            capture->init();
-            QMessageBox::critical(this,tr("Save"),tr("Saved"));
+            //Capture * capture = new Capture(nom.toStdString());
+            //capture->init();
+            //QMessageBox::critical(this,tr("Save"),tr("Saved"));
             conn.close();
             this->hide();
             //admin->show();

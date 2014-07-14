@@ -54,3 +54,9 @@ void Administration::on_pushButtonAjouterPoste_clicked()
     nouveauPoste = new AjouterPoste(this);
     nouveauPoste->show();
 }
+
+void Administration::on_pushButtonConsulterDetails_clicked()
+{
+    adminitreDetails = new Admin(this);
+    adminitreDetails->show();
+}

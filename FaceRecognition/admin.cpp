@@ -57,7 +57,18 @@ void Admin::on_pushButtonSupprimer_clicked()
 //consulter liste absence
 void Admin::on_pushButtonConsulter_2_clicked()
 {
-
+    LoginDialog conn;
+    conn.connOpen();
+    QSqlQuery * qryAbsence = new QSqlQuery(conn.mydb);
+    QString date = ui->calendarWidget->selectedDate().toString();
+    //qryAbsence->("select nom,prenom,sexe,Grade from employe where date"+date+"");
+    //qryAbsence->("select nom,prenom,sexe,Grade from employe where employe.id_employe in (select nom from presence where date = "+date+"");
+    qryAbsence->prepare("select id_employe, nom, prenom, sexe,Grade from employe intersect select id_employe from presence where date = "+date+"");
+    qryAbsence->exec();
+    QSqlQueryModel * modalAb = new QSqlQueryModel();
+    modalAb->setQuery(*qryAbsence);
+    ui->tableViewListeAbsence->setModel(modalAb);
+    conn.connClose();
 }
 
 void Admin::on_pushButtonChargerEmp_clicked()
