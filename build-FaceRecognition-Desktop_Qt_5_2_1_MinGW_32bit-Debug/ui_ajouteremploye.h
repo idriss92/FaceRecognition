@@ -44,10 +44,10 @@ public:
     {
         if (AjouterEmploye->objectName().isEmpty())
             AjouterEmploye->setObjectName(QStringLiteral("AjouterEmploye"));
-        AjouterEmploye->resize(392, 228);
+        AjouterEmploye->resize(451, 323);
         groupBoxEmploye = new QGroupBox(AjouterEmploye);
         groupBoxEmploye->setObjectName(QStringLiteral("groupBoxEmploye"));
-        groupBoxEmploye->setGeometry(QRect(-10, -30, 391, 271));
+        groupBoxEmploye->setGeometry(QRect(10, -10, 431, 331));
         label_nom = new QLabel(groupBoxEmploye);
         label_nom->setObjectName(QStringLiteral("label_nom"));
         label_nom->setGeometry(QRect(50, 90, 46, 13));
@@ -68,10 +68,10 @@ public:
         comboBoxDepartement->setGeometry(QRect(120, 150, 181, 22));
         pushButtonAnnuler = new QPushButton(groupBoxEmploye);
         pushButtonAnnuler->setObjectName(QStringLiteral("pushButtonAnnuler"));
-        pushButtonAnnuler->setGeometry(QRect(150, 220, 75, 23));
+        pushButtonAnnuler->setGeometry(QRect(140, 270, 75, 23));
         pushButtonEnregistrer = new QPushButton(groupBoxEmploye);
         pushButtonEnregistrer->setObjectName(QStringLiteral("pushButtonEnregistrer"));
-        pushButtonEnregistrer->setGeometry(QRect(260, 220, 101, 23));
+        pushButtonEnregistrer->setGeometry(QRect(250, 270, 101, 23));
         label = new QLabel(groupBoxEmploye);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(110, 40, 151, 17));
