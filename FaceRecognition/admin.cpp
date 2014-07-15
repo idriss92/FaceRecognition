@@ -1,8 +1,7 @@
 #include "admin.h"
 #include "ui_admin.h"
 #include "logindialog.h"
-#include <iostream>
-using namespace std;
+
 Admin::Admin(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Admin)
@@ -58,7 +57,6 @@ void Admin::on_pushButtonSupprimer_clicked()
 //consulter liste absences
 void Admin::on_pushButtonConsulter_2_clicked()
 {
-    cout<<"absence";
     LoginDialog conn;
     conn.connOpen();
     QSqlQuery * qryAbsence = new QSqlQuery(conn.mydb);
@@ -103,13 +101,13 @@ void Admin::on_pushButtonChargerEmp_clicked()
 //liste des presences
 void Admin::on_pushButtonConsulterPresence_clicked()
 {
-    cout<<"presence";
     LoginDialog conn;
     conn.connOpen();
     QSqlQuery * qryPresence = new QSqlQuery(conn.mydb);
     //QDate date = ui->calendarWidget->selectedDate();
+    //
     QString date = ui->calendarWidget->selectedDate().toString();
-    qryPresence->prepare("select nom, prenom, sexe, grade from employe, presence where employe.id_employe = presence.id_employe and where date_scan = "+date+"");
+    qryPresence->prepare("select nom, prenom, sexe, grade from employe, presence  where date_scan = "+date+"");
     qryPresence->exec();
     QSqlQueryModel * modalPres = new QSqlQueryModel();
     modalPres->setQuery(*qryPresence);
