@@ -46,6 +46,7 @@ public:
     QPushButton *pushButtonConsulter_2;
     QFrame *line;
     QPushButton *pushButtonChargerEmp;
+    QPushButton *pushButtonConsulterPresence;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -102,7 +103,10 @@ public:
         line->setFrameShadow(QFrame::Sunken);
         pushButtonChargerEmp = new QPushButton(centralwidget);
         pushButtonChargerEmp->setObjectName(QStringLiteral("pushButtonChargerEmp"));
-        pushButtonChargerEmp->setGeometry(QRect(880, 240, 101, 23));
+        pushButtonChargerEmp->setGeometry(QRect(880, 280, 101, 23));
+        pushButtonConsulterPresence = new QPushButton(centralwidget);
+        pushButtonConsulterPresence->setObjectName(QStringLiteral("pushButtonConsulterPresence"));
+        pushButtonConsulterPresence->setGeometry(QRect(880, 240, 101, 23));
         Admin->setCentralWidget(centralwidget);
         calendarWidget->raise();
         groupBoxRecherche->raise();
@@ -114,6 +118,7 @@ public:
         line->raise();
         pushButtonConsulter->raise();
         pushButtonChargerEmp->raise();
+        pushButtonConsulterPresence->raise();
         menubar = new QMenuBar(Admin);
         menubar->setObjectName(QStringLiteral("menubar"));
         menubar->setGeometry(QRect(0, 0, 1042, 21));
@@ -139,6 +144,7 @@ public:
         pushButtonSupprimer->setText(QApplication::translate("Admin", "Supprimer", 0));
         pushButtonConsulter_2->setText(QApplication::translate("Admin", "Consulter absences", 0));
         pushButtonChargerEmp->setText(QApplication::translate("Admin", "Charger Employ\303\251s", 0));
+        pushButtonConsulterPresence->setText(QApplication::translate("Admin", "Consulter presences", 0));
     } // retranslateUi
 
 };

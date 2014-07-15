@@ -28,6 +28,8 @@ private slots:
 
     void on_pushButtonChargerEmp_clicked();
 
+    void on_pushButtonConsulterPresence_clicked();
+
 private:
     Ui::Admin *ui;
 };

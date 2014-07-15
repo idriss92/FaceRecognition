@@ -185,13 +185,26 @@
     <property name="geometry">
      <rect>
       <x>880</x>
-      <y>240</y>
+      <y>280</y>
       <width>101</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>Charger Employés</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonConsulterPresence">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>240</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Consulter presences</string>
     </property>
    </widget>
    <zorder>calendarWidget</zorder>
@@ -204,6 +217,7 @@
    <zorder>line</zorder>
    <zorder>pushButtonConsulter</zorder>
    <zorder>pushButtonChargerEmp</zorder>
+   <zorder>pushButtonConsulterPresence</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
