@@ -406,12 +406,12 @@ release/moc_mainwindow.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../FaceRecognition/employe.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/rec.h \
 		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtDebug \
-		../FaceRecognition/admin.h \
 		../FaceRecognition/mainwindow.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\mainwindow.h -o release\moc_mainwindow.cpp
 
@@ -682,6 +682,7 @@ release/moc_administration.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw4
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
 		../FaceRecognition/administration.h \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../FaceRecognition/administration.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\administration.h -o release\moc_administration.cpp
 
@@ -953,6 +954,7 @@ release/moc_logindialog.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_3
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../FaceRecognition/logindialog.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\logindialog.h -o release\moc_logindialog.cpp
 
@@ -1334,6 +1336,7 @@ release/moc_ajouteremploye.cpp: ../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw4
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../FaceRecognition/ajouteremploye.h
 	C:\Qt\Qt5.2.1Windows\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\FaceRecognition\ajouteremploye.h -o release\moc_ajouteremploye.cpp
 
@@ -2110,43 +2113,13 @@ release/mainwindow.o: ../FaceRecognition/mainwindow.cpp ../FaceRecognition/mainw
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../FaceRecognition/employe.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/rec.h \
 		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtDebug \
-		../FaceRecognition/admin.h \
 		ui_mainwindow.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLabel \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlabel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMenuBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenubar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenu.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QStatusBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstatusbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QToolBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtoolbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QVBoxLayout \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qboxlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayoutitem.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgridlayout.h \
 		../FaceRecognition/identifier.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\FaceRecognition\mainwindow.cpp
 
@@ -2417,36 +2390,8 @@ release/administration.o: ../FaceRecognition/administration.cpp ../FaceRecogniti
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
 		../FaceRecognition/ajouterposte.h \
-		ui_administration.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLabel \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlabel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMenu \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenu.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMenuBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenubar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QStatusBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstatusbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QVBoxLayout \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qboxlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayoutitem.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgridlayout.h
+		../FaceRecognition/admin.h \
+		ui_administration.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\administration.o ..\FaceRecognition\administration.cpp
 
 release/logindialog.o: ../FaceRecognition/logindialog.cpp ../FaceRecognition/logindialog.h \
@@ -2718,30 +2663,8 @@ release/logindialog.o: ../FaceRecognition/logindialog.cpp ../FaceRecognition/log
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		ui_logindialog.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QGridLayout \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgridlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayoutitem.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qboxlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLabel \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlabel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QDebug \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QFileInfo \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
@@ -2858,48 +2781,12 @@ release/listeemploye.o: ../FaceRecognition/listeemploye.cpp ../FaceRecognition/l
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvector2d.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtouchdevice.h \
 		ui_listeemploye.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QTableView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtableview.h \
 		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QDialog \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLineEdit \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlineedit.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextcursor.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextformat.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -2939,8 +2826,10 @@ release/listeemploye.o: ../FaceRecognition/listeemploye.cpp ../FaceRecognition/l
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporarydir.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QScopedPointer \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporaryfile.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qidentityproxymodel.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qsortfilterproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstringlistmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonarray.h \
@@ -2948,8 +2837,10 @@ release/listeemploye.o: ../FaceRecognition/listeemploye.cpp ../FaceRecognition/l
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsondocument.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstracteventdispatcher.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qbasictimer.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmath.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmetaobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmimedata.h \
@@ -3003,6 +2894,7 @@ release/listeemploye.o: ../FaceRecognition/listeemploye.cpp ../FaceRecognition/l
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qlinkedlist.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmessageauthenticationcode.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qscopedvaluerollback.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstack.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtextboundaryfinder.h \
@@ -3023,7 +2915,20 @@ release/listeemploye.o: ../FaceRecognition/listeemploye.cpp ../FaceRecognition/l
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlquerymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaldelegate.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlistview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qcombobox.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
@@ -3036,6 +2941,7 @@ release/listeemploye.o: ../FaceRecognition/listeemploye.cpp ../FaceRecognition/l
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QCalendarWidget \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qcalendarwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\listeemploye.o ..\FaceRecognition\listeemploye.cpp
@@ -3307,30 +3213,15 @@ release/ajouteremploye.o: ../FaceRecognition/ajouteremploye.cpp ../FaceRecogniti
 		../FaceRecognition/listeemploye.h \
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		ui_ajouteremploye.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QComboBox \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QGroupBox \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgroupbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLabel \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlabel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtDebug
@@ -3447,58 +3338,14 @@ release/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceR
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvector2d.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtouchdevice.h \
 		ui_ajouterdepartement.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QGroupBox \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgroupbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHBoxLayout \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qboxlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayoutitem.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgridlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLabel \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlabel.h \
+		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLineEdit \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlineedit.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextcursor.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextformat.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qpen.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
-		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QtSql \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QtSqlDepends \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtCore \
@@ -3534,8 +3381,10 @@ release/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceR
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporarydir.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QScopedPointer \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporaryfile.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qidentityproxymodel.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qsortfilterproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstringlistmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonarray.h \
@@ -3543,8 +3392,10 @@ release/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceR
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsondocument.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstracteventdispatcher.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qbasictimer.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmath.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmetaobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmimedata.h \
@@ -3598,6 +3449,7 @@ release/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceR
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qlinkedlist.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmessageauthenticationcode.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qscopedvaluerollback.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstack.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtextboundaryfinder.h \
@@ -3618,7 +3470,20 @@ release/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceR
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlquerymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaldelegate.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlistview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qcombobox.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
@@ -3629,8 +3494,10 @@ release/ajouterdepartement.o: ../FaceRecognition/ajouterdepartement.cpp ../FaceR
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMainWindow \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
 		../FaceRecognition/listeemploye.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouteremploye.h \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ajouterdepartement.o ..\FaceRecognition\ajouterdepartement.cpp
@@ -3903,12 +3770,12 @@ release/main.o: ../FaceRecognition/main.cpp ../FaceRecognition/mainwindow.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qtsqlversion.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QSqlDatabase \
 		../FaceRecognition/ajouterposte.h \
+		../FaceRecognition/admin.h \
 		../FaceRecognition/employe.h \
 		../FaceRecognition/capture.h \
 		../FaceRecognition/rec.h \
 		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtDebug \
-		../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
@@ -4033,54 +3900,7 @@ release/informations.o: ../FaceRecognition/informations.cpp ../FaceRecognition/i
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtouchdevice.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
-		ui_informations.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMenuBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenubar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenu.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QStatusBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstatusbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QTextBrowser \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtextbrowser.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtextedit.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextdocument.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextcursor.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextformat.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qpen.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget
+		ui_informations.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\informations.o ..\FaceRecognition\informations.cpp
 
 release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
@@ -4196,62 +4016,16 @@ release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
 		ui_admin.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QCalendarWidget \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qcalendarwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qdatetime.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QFrame \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QGroupBox \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgroupbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
+		../FaceRecognition/logindialog.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QDialog \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLineEdit \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlineedit.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextcursor.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextformat.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qpen.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMenuBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenubar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmenu.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QStatusBar \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstatusbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QTableView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtableview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
-		../FaceRecognition/logindialog.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QDialog \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QtSql \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QtSqlDepends \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtCore \
@@ -4267,6 +4041,7 @@ release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtextcodec.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qendian.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qlibraryinfo.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qdatetime.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qnumeric.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qbuffer.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qdir.h \
@@ -4286,8 +4061,10 @@ release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporarydir.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QScopedPointer \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporaryfile.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qidentityproxymodel.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qsortfilterproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstringlistmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonarray.h \
@@ -4295,8 +4072,10 @@ release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsondocument.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstracteventdispatcher.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qbasictimer.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmath.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmetaobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmimedata.h \
@@ -4350,6 +4129,7 @@ release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qlinkedlist.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmessageauthenticationcode.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qscopedvaluerollback.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstack.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtextboundaryfinder.h \
@@ -4370,7 +4150,18 @@ release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlquerymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaldelegate.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlistview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qcombobox.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
@@ -4379,6 +4170,7 @@ release/admin.o: ../FaceRecognition/admin.cpp ../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtDebug \
 		../FaceRecognition/administration.h \
 		../FaceRecognition/listeemploye.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
 		../FaceRecognition/ajouterposte.h
@@ -4495,58 +4287,14 @@ release/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/a
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvector2d.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtouchdevice.h \
 		ui_ajouterposte.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QVariant \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QAction \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qaction.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qactiongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QApplication \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qguiapplication.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qinputmethod.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QButtonGroup \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qbuttongroup.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QGroupBox \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgroupbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHBoxLayout \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qboxlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlayoutitem.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qgridlayout.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QHeaderView \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qheaderview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLabel \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlabel.h \
+		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QLineEdit \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlineedit.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qframe.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextcursor.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextformat.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qpen.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QPushButton \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qpushbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractbutton.h \
-		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
-		../FaceRecognition/logindialog.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QtSql \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/QtSqlDepends \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QtCore \
@@ -4582,8 +4330,10 @@ release/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/a
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporarydir.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/QScopedPointer \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtemporaryfile.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractitemmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qidentityproxymodel.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qitemselectionmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qsortfilterproxymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstringlistmodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonarray.h \
@@ -4591,8 +4341,10 @@ release/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/a
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsondocument.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qjsonobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstracteventdispatcher.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qeventloop.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qbasictimer.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmath.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmetaobject.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmimedata.h \
@@ -4646,6 +4398,7 @@ release/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/a
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qlinkedlist.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qmessageauthenticationcode.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qregularexpression.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qscopedvaluerollback.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qstack.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtCore/qtextboundaryfinder.h \
@@ -4666,7 +4419,20 @@ release/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/a
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlquerymodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaldelegate.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyleoption.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qvalidator.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtGui/qicon.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractslider.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qstyle.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabbar.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qtabwidget.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qlistview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractitemview.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qabstractscrollarea.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qcombobox.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqlrelationaltablemodel.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtSql/qsqltablemodel.h \
@@ -4677,8 +4443,10 @@ release/ajouterposte.o: ../FaceRecognition/ajouterposte.cpp ../FaceRecognition/a
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMainWindow \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmainwindow.h \
 		../FaceRecognition/listeemploye.h \
+		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QWidget \
 		../FaceRecognition/ajouterdepartement.h \
 		../FaceRecognition/ajouteremploye.h \
+		../FaceRecognition/admin.h \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
 		../../../../../../Qt/Qt5.2.1Windows/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ajouterposte.o ..\FaceRecognition\ajouterposte.cpp

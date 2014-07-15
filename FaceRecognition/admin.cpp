@@ -60,6 +60,7 @@ void Admin::on_pushButtonConsulter_2_clicked()
     LoginDialog conn;
     conn.connOpen();
     QSqlQuery * qryAbsence = new QSqlQuery(conn.mydb);
+    //QDate date = ui->calendarWidget->selectedDate();
     QString date = ui->calendarWidget->selectedDate().toString();
     //qryAbsence->("select nom,prenom,sexe,Grade from employe where date"+date+"");
     //qryAbsence->("select nom,prenom,sexe,Grade from employe where employe.id_employe in (select nom from presence where date = "+date+"");
@@ -84,5 +85,5 @@ void Admin::on_pushButtonChargerEmp_clicked()
     modal->setQuery(*qry);
 
     ui->tableViewEmploye->setModel(modal);
-    conn.close();
+    conn.connClose();
 }

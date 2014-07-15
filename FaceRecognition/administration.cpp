@@ -57,6 +57,8 @@ void Administration::on_pushButtonAjouterPoste_clicked()
 
 void Administration::on_pushButtonConsulterDetails_clicked()
 {
-    adminitreDetails = new Admin(this);
-    adminitreDetails->show();
+    //adminitreDetails = new Admin(this);
+    //adminitreDetails->show();
+    Admin * administreDetails = new Admin();
+    administreDetails->show();
 }
