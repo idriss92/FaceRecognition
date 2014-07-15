@@ -1,7 +1,7 @@
 #ifndef REC_H
 #define REC_H
 
-/*
+
 
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -29,5 +29,5 @@ public:
     String getChemins(int indice);
 
 };
-*/
+
 #endif // REC_H

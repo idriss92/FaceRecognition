@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-   /* LoginDialog conn;
+    LoginDialog conn;
     conn.open();
     QSqlQuery query;
 
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
            qDebug()<<salary;
 
      }
-    cout<<salary;*/
+    cout<<salary;
     return a.exec();
 
 }
