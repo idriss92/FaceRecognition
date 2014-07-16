@@ -1,7 +1,7 @@
 #include "admin.h"
 #include "ui_admin.h"
 #include "logindialog.h"
-
+#include <QDir>
 Admin::Admin(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Admin)
@@ -36,9 +36,11 @@ void Admin::on_pushButtonRecherche_clicked()
 
 }
 
+
 //Consulter employé selectionner
 void Admin::on_pushButtonConsulter_clicked()
 {
+    //qint8 nombre = ui->tableViewEmploye->
 //    customProfil = new Profilage(this);
 //    customProfil->setModal(true);
 //    customProfil->show();

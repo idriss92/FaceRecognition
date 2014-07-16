@@ -26,6 +26,7 @@ public:
 
     bool connOpen()
     {
+
         mydb = QSqlDatabase::addDatabase("QSQLITE");
         mydb.setDatabaseName("../bdd/facerecognition.db");
 
