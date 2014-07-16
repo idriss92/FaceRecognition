@@ -139,7 +139,7 @@
       <x>310</x>
       <y>150</y>
       <width>75</width>
-      <height>61</height>
+      <height>101</height>
      </rect>
     </property>
     <property name="text">
@@ -150,7 +150,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>180</y>
+      <y>190</y>
       <width>101</width>
       <height>21</height>
      </rect>
@@ -164,6 +164,29 @@
      <rect>
       <x>120</x>
       <y>190</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelsexe">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sexe</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxSexe">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>230</y>
       <width>181</width>
       <height>22</height>
      </rect>

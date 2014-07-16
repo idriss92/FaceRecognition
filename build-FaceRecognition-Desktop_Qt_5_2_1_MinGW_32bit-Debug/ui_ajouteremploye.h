@@ -39,6 +39,8 @@ public:
     QPushButton *pushButtonCharger;
     QLabel *label_poste;
     QComboBox *comboBoxPoste;
+    QLabel *labelsexe;
+    QComboBox *comboBoxSexe;
 
     void setupUi(QWidget *AjouterEmploye)
     {
@@ -77,13 +79,19 @@ public:
         label->setGeometry(QRect(110, 40, 151, 17));
         pushButtonCharger = new QPushButton(groupBoxEmploye);
         pushButtonCharger->setObjectName(QStringLiteral("pushButtonCharger"));
-        pushButtonCharger->setGeometry(QRect(310, 150, 75, 61));
+        pushButtonCharger->setGeometry(QRect(310, 150, 75, 101));
         label_poste = new QLabel(groupBoxEmploye);
         label_poste->setObjectName(QStringLiteral("label_poste"));
-        label_poste->setGeometry(QRect(50, 180, 101, 21));
+        label_poste->setGeometry(QRect(50, 190, 101, 21));
         comboBoxPoste = new QComboBox(groupBoxEmploye);
         comboBoxPoste->setObjectName(QStringLiteral("comboBoxPoste"));
         comboBoxPoste->setGeometry(QRect(120, 190, 181, 22));
+        labelsexe = new QLabel(groupBoxEmploye);
+        labelsexe->setObjectName(QStringLiteral("labelsexe"));
+        labelsexe->setGeometry(QRect(50, 230, 46, 13));
+        comboBoxSexe = new QComboBox(groupBoxEmploye);
+        comboBoxSexe->setObjectName(QStringLiteral("comboBoxSexe"));
+        comboBoxSexe->setGeometry(QRect(120, 230, 181, 22));
 
         retranslateUi(AjouterEmploye);
 
@@ -102,6 +110,7 @@ public:
         label->setText(QApplication::translate("AjouterEmploye", "Nouvel Employ\303\251", 0));
         pushButtonCharger->setText(QApplication::translate("AjouterEmploye", "Charger", 0));
         label_poste->setText(QApplication::translate("AjouterEmploye", "Poste", 0));
+        labelsexe->setText(QApplication::translate("AjouterEmploye", "Sexe", 0));
     } // retranslateUi
 
 };
