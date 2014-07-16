@@ -65,10 +65,10 @@ public:
         groupBoxRecherche->setGeometry(QRect(290, 20, 571, 281));
         lineEditRecherche = new QLineEdit(groupBoxRecherche);
         lineEditRecherche->setObjectName(QStringLiteral("lineEditRecherche"));
-        lineEditRecherche->setGeometry(QRect(40, 40, 301, 20));
+        lineEditRecherche->setGeometry(QRect(40, 40, 381, 20));
         pushButtonRecherche = new QPushButton(groupBoxRecherche);
         pushButtonRecherche->setObjectName(QStringLiteral("pushButtonRecherche"));
-        pushButtonRecherche->setGeometry(QRect(360, 40, 101, 23));
+        pushButtonRecherche->setGeometry(QRect(450, 40, 101, 23));
         tableViewEmploye = new QTableView(groupBoxRecherche);
         tableViewEmploye->setObjectName(QStringLiteral("tableViewEmploye"));
         tableViewEmploye->setGeometry(QRect(40, 80, 511, 192));

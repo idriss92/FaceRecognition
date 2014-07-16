@@ -7,6 +7,8 @@ Admin::Admin(QWidget *parent) :
     ui(new Ui::Admin)
 {
     ui->setupUi(this);
+    filling = false;
+    FillForm();
 }
 
 Admin::~Admin()
@@ -17,26 +19,37 @@ Admin::~Admin()
 //Rechercher employé
 void Admin::on_pushButtonRecherche_clicked()
 {
-    QString motRecherche;
+    QString motRecherche = ui->lineEditRecherche->text();
 
     LoginDialog conn;
     conn.connOpen();
     QSqlQuery * qry = new QSqlQuery(conn.mydb);
 
-    qry->prepare("select * from employe where nom = '"+motRecherche+"'");
+    qry->prepare("select id_employe,nom,prenom,sexe,grade from employe where id_employe LIKE '%"+motRecherche+"%' or  nom LIKE  '%"+motRecherche+"%'  or prenom LIKE  '%"+motRecherche+"%'  or grade LIKE  '%"+motRecherche+"%'");
 
     qry->exec();
     QSqlQueryModel * modal = new QSqlQueryModel();
     modal->setQuery(*qry);
     ui->tableViewEmploye->setModel(modal);
-    conn.close();
+
+    conn.connClose();
 
 }
 
 //Consulter employé selectionner
 void Admin::on_pushButtonConsulter_clicked()
 {
+//    customProfil = new Profilage(this);
+//    customProfil->setModal(true);
+//    customProfil->show();
 
+//    connect(this, SIGNAL(sendData(QStringList)),customProfil,SLOT(receData(QStringList)));
+
+//    QStringList so;
+//    //so.append(ui->tableViewEmploye->it);
+//    so.append(ui->tableWidget->item(row,1)->text());
+//    emit sendData(so);
+    //ui->tableViewEmploye->sel
 }
 
 //modifier employé sélectionner
@@ -50,8 +63,6 @@ void Admin::on_pushButtonSupprimer_clicked()
 {
     LoginDialog conn;
     conn.connOpen();
-    //ui->tableViewEmploye->selectColumn();
-
 }
 
 //consulter liste absences
@@ -60,25 +71,12 @@ void Admin::on_pushButtonConsulter_2_clicked()
     LoginDialog conn;
     conn.connOpen();
     QSqlQuery * qryAbsence = new QSqlQuery(conn.mydb);
-   // QSqlQuery * qryPresence = new QSqlQuery(conn.mydb);
-    //QDate date = ui->calendarWidget->selectedDate();
     QString date = ui->calendarWidget->selectedDate().toString();
-    //qryAbsence->("select nom,prenom,sexe,Grade from employe where date"+date+"");
-    //qryAbsence->("select nom,prenom,sexe,Grade from employe where employe.id_employe in (select nom from presence where date = "+date+"");
-    //qryAbsence->prepare("select * from employe intersect (select id_employe from presence where date_scan = "+date+")");
-    //qryAbsence->prepare("select * from presence");
-    //qryAbsence->prepare("select * from employe ")
- //   qryPresence->prepare("select nom, prenom, sexe, grade from employe, presence where employe.id_employe = presence.id_employe");
-    //qryAbsence->prepare("select nom, prenom, sexe, grade from employe MINUS(select nom, prenom,sexe,grade from employe, presence where employe.id_employe = presence.id_employe)");
-    qryAbsence->prepare("select nom, prenom, sexe, grade from employe where nom not in (select nom, prenom, sexe, grade from employe, presence where employe.id_employe = presence.id_employe)");
+    qryAbsence->prepare("select nom, prenom, sexe, grade from employe left join presence on (employe.id_employe = presence.id_employe) where presence.id_employe is null");
     qryAbsence->exec();
-  //  qryPresence->exec();
     QSqlQueryModel * modalAb = new QSqlQueryModel();
-  //  QSqlQueryModel * modalPres = new QSqlQueryModel();
-  //  modalPres->setQuery(*qryPresence);
     modalAb->setQuery(*qryAbsence);
     ui->tableViewListeAbsence->setModel(modalAb);
-//    ui->tableViewListePresence->setModel(modalPres);
     conn.connClose();
 }
 
@@ -91,11 +89,38 @@ void Admin::on_pushButtonChargerEmp_clicked()
     qry->prepare("select nom, prenom, sexe, grade from employe");
 
     qry->exec();
+
+
     QSqlQueryModel * modal = new QSqlQueryModel();
     modal->setQuery(*qry);
 
     ui->tableViewEmploye->setModel(modal);
     conn.connClose();
+}
+
+void Admin::FillForm()
+{
+    if(filling)
+        return;
+    filling = true;
+
+    LoginDialog conn;
+    conn.connOpen();
+    QSqlQuery * qry = new QSqlQuery(conn.mydb);
+
+    qry->prepare("select nom, prenom, sexe, grade from employe");
+
+    qry->exec();
+
+
+    QSqlQueryModel * modal = new QSqlQueryModel();
+    modal->setQuery(*qry);
+
+    ui->tableViewEmploye->setModel(modal);
+
+    filling = false;
+    ui->tableViewEmploye->setModel(modal);
+
 }
 
 //liste des presences
@@ -104,13 +129,47 @@ void Admin::on_pushButtonConsulterPresence_clicked()
     LoginDialog conn;
     conn.connOpen();
     QSqlQuery * qryPresence = new QSqlQuery(conn.mydb);
-    //QDate date = ui->calendarWidget->selectedDate();
-    //
     QString date = ui->calendarWidget->selectedDate().toString();
-    qryPresence->prepare("select nom, prenom, sexe, grade from employe, presence  where date_scan = "+date+"");
+    qryPresence->prepare("select employe.nom, employe.prenom, employe.sexe, employe.grade,presence.date_scan from employe, presence  where employe.id_employe = presence.id_employe ");
     qryPresence->exec();
     QSqlQueryModel * modalPres = new QSqlQueryModel();
     modalPres->setQuery(*qryPresence);
     ui->tableViewListePresence->setModel(modalPres);
     conn.connClose();
+}
+
+//void Admin::on_tableWidget_cellDoubleClicked(int row, int column)
+//{
+//    customProfil = new Profilage(this);
+//    customProfil->setModal(true);
+//    customProfil->show();
+
+//    connect(this, SIGNAL(sendData(QStringList)),customProfil,SLOT(receData(QStringList)));
+
+//    QStringList so;
+    //so.append(ui->tableViewEmploye->it);
+//    so.append(ui->tableWidget->item(row,1)->text());
+//    emit sendData(so);
+//}
+
+void Admin::on_tableViewEmploye_activated(const QModelIndex &index)
+{
+    customProfil = new Profilage(this);
+    customProfil->setModal(true);
+    customProfil->show();
+
+    connect(this, SIGNAL(sendData(QStringList)),customProfil,SLOT(receData(QStringList)));
+
+    QStringList so;
+    //so.append(ui->tableViewEmploye->);
+    //QStringList so;
+    //    //so.append(ui->tableViewEmploye->it);
+    //    so.append(ui->tableWidget->item(row,1)->text());
+    //   emit sendData(so);
+    QString motRecherche = ui->tableViewEmploye->model()->data(index).toString();
+    LoginDialog conn;
+    conn.connOpen();
+    QSqlQuery * qry = new QSqlQuery(conn.mydb);
+
+    qry->prepare("select id_employe,nom,prenom,sexe,grade from employe where id_employe='"+motRecherche+"' or  nom = '"+motRecherche+"' or prenom = '"+motRecherche+"' or grade = '"+motRecherche+"'");
 }

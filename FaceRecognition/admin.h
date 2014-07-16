@@ -2,6 +2,7 @@
 #define ADMIN_H
 
 #include <QMainWindow>
+#include "profilage.h"
 
 namespace Ui {
 class Admin;
@@ -30,8 +31,18 @@ private slots:
 
     void on_pushButtonConsulterPresence_clicked();
 
+    void on_tableWidget_cellDoubleClicked(int row, int column);
+
+    void on_tableViewEmploye_activated(const QModelIndex &index);
+
+signals :
+    void sendData(QStringList);
+
 private:
     Ui::Admin *ui;
+    Profilage * customProfil;
+    void FillForm();
+    bool filling;
 };
 
 #endif // ADMIN_H

@@ -6,6 +6,7 @@
 #include "capture.h"
 #include "rec.h"
 #include "personne.h"
+#include <string>
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -14,11 +15,11 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    LoginDialog conn;
-    conn.open();
-    QSqlQuery query;
+  //  LoginDialog conn;
+  //  conn.open();
+ //   QSqlQuery query;
 
-    String v =   "benz.jpg";
+/*    String v =   "benz.jpg";
 
 
     cout<<"result " + v<<endl;
@@ -40,9 +41,9 @@ int main(int argc, char *argv[])
 
    salary = query.value(0).toInt();
            qDebug()<<salary;
-
-     }
-    cout<<salary;
+*/
+ //    }
+ //   cout<<salary;
     return a.exec();
 
 }

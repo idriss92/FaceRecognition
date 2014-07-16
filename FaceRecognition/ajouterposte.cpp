@@ -29,8 +29,8 @@ void AjouterPoste::on_pushButtonEnregistrer_clicked()
 
         if(query.exec())
         {
-            Capture * capture = new Capture(nom.toStdString());
-            capture->init();
+            //Capture * capture = new Capture(nom.toStdString());
+            //capture->init();
             QMessageBox::critical(this,tr("Save"),tr("Saved"));
             conn.close();
             this->hide();
