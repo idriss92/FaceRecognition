@@ -2,7 +2,7 @@
 #define REC_H
 
 
-/*
+
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
@@ -28,6 +28,6 @@ public:
     Mat getListImg(int indice);
     String getChemins(int indice);
 
-};*/
+};
 
 #endif // REC_H

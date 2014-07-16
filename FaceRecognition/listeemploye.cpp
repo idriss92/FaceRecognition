@@ -20,7 +20,7 @@ void ListeEmploye::on_pushButton_clicked()
     conn.connOpen();
     QSqlQuery * qry = new QSqlQuery(conn.mydb);
 
-    qry->prepare("select nom, prenom from employe");
+    qry->prepare("selectid_employe,id_service, nom, prenom,sexe,grade from employe");
 
     qry->exec();
     QSqlQueryModel * modal = new QSqlQueryModel();

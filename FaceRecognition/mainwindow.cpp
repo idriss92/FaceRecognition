@@ -24,7 +24,7 @@ void MainWindow::on_pushButtonAdmin_clicked()
 
 void MainWindow::on_pushButtonEmploye_clicked()
 {
- //f_employe = new Employe(this);
- //f_employe->show();
+ f_employe = new Employe(this);
+ f_employe->show();
 }
 
